@@ -1,1177 +1,665 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-11EMD6274P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-11EMD6274P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-11EMD6274P');
-</script>
-  
-<title>Abia Campos · Mídia Kit 2026</title>
-<meta name="description" content="Mídia kit · Abia Campos · Criadora de Conteúdo · Moda, beleza &amp; lifestyle · Goiânia, GO"/>
-<meta property="og:type" content="profile"/>
-<meta property="og:site_name" content="Abia Campos"/>
-<meta property="og:title" content="Abia Campos · Mídia Kit 2026"/>
-<meta property="og:description" content="Criadora de Conteúdo · Moda, beleza &amp; lifestyle · Goiânia, GO"/>
-<meta property="og:locale" content="pt_BR"/>
-<meta property="og:locale:alternate" content="en_US"/>
-<meta property="og:locale:alternate" content="es_ES"/>
-<!-- TODO: atualizar para o domínio real quando o site for publicado -->
-<meta property="og:url" content="https://abiacampos.example.com/"/>
-<!-- TODO: subir capa-abia.jpg (1200x630px) na raiz do projeto, junto do index.html -->
-<meta property="og:image" content="https://abiacampos.example.com/capa-abia.jpg"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="Abia Campos · Mídia Kit 2026"/>
-<link rel="canonical" href="https://abiacampos.example.com/"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Abia Campos · Mídia Kit 2026"/>
-<meta name="twitter:description" content="Criadora de Conteúdo · Moda, beleza &amp; lifestyle · Goiânia, GO"/>
-<meta name="twitter:image" content="https://abiacampos.example.com/capa-abia.jpg"/>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23faf6f0'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='58' text-anchor='middle' fill='%237c2f34'%3EA%3C/text%3E%3C/svg%3E"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<style>:root{
-  --ink:#1c1917;
-  --ink-soft:#736c63;
-  --cream:#faf6f0;
-  --paper:#ffffff;
-  --paper-alt:#f2ece2;
-  --soft-pink:#f1e2dd;
-  --pink:#7c2f34;
-  --green:#3d3630;
-  --gold:#a07c40;
-  --mint:#cdb999;
-  --line:rgba(28,23,18,.14);
-  --line-soft:rgba(28,23,18,.08);
-  --note-gold:#f1e2c4; --note-pink:#f1e2dd; --note-mint:#ece3d3; --note-green:#ece3d3;
-  --shadow:0 18px 44px -30px rgba(20,14,10,.4);
-  --shadow-sm:0 8px 20px -14px rgba(20,14,10,.3);
-  --radius:3px;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{overflow-x:clip;}
-body{
-  font-family:'Inter',system-ui,sans-serif;color:var(--ink);
-  -webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden;
-  background:var(--cream);
-}
-img{display:block;max-width:100%;}
-a{color:inherit;text-decoration:none;}
-.fred{font-family:'Fraunces',serif;}
-.hand{font-family:'Fraunces',serif;font-style:italic;}
+    gtag('config', 'G-11EMD6274P');
+  </script>
 
-.blob{display:none;}
-
-/* ===== scroll progress ===== */
-.progress-bar{position:fixed;top:0;left:0;height:2px;width:0%;background:var(--pink);z-index:1200;}
-
-/* ===== menu bar ===== */
-.menubar{position:sticky;top:0;z-index:1000;background:rgba(250,246,240,.88);
-  border-bottom:1px solid var(--line-soft);transition:box-shadow .3s ease, background .3s ease;}
-.menubar.scrolled{background:rgba(250,246,240,.97);box-shadow:0 12px 24px -20px rgba(20,14,10,.25);
-  backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);}
-.menu-inner{max-width:1180px;margin:0 auto;padding:1rem 1.4rem;
-  display:flex;align-items:center;justify-content:space-between;gap:1rem;}
-.menu-brand{display:flex;align-items:center;gap:.5rem;font-weight:600;font-size:.86rem;
-  letter-spacing:.14em;text-transform:uppercase;}
-.menu-nav{display:flex;align-items:center;gap:.3rem;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;}
-.menu-nav::-webkit-scrollbar{display:none;}
-.menu-nav a{position:relative;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--ink-soft);padding:.4rem .6rem;white-space:nowrap;transition:.2s;}
-.menu-nav a::after{content:"";position:absolute;left:.6rem;right:.6rem;bottom:.1rem;height:1px;background:var(--pink);
-  transform:scaleX(0);transform-origin:left;transition:transform .25s ease;}
-.menu-nav a:hover{color:var(--ink);}
-.menu-nav a:hover::after,.menu-nav a.active::after{transform:scaleX(1);}
-.menu-nav a.active{color:var(--ink);}
-.menu-nav a.cta{border:1px solid var(--ink);color:var(--ink);padding:.42rem .95rem;margin-left:.3rem;}
-.menu-nav a.cta::after{display:none;}
-.menu-nav a.cta:hover{background:var(--ink);color:#fff;}
-.menu-clock{font-variant-numeric:tabular-nums;font-weight:600;font-size:.78rem;opacity:.55;display:none;letter-spacing:.04em;}
-.menu-toggle{display:none;}
-
-/* ===== layout shell ===== */
-.board{max-width:1180px;margin:0 auto;padding:3.2rem 1.4rem 5rem;position:relative;z-index:2;}
-.scene{position:relative;margin-bottom:5.2rem;}
-.scene-tag{display:flex;align-items:baseline;gap:.6rem;font-size:.68rem;font-weight:700;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
-  padding-bottom:.7rem;margin-bottom:1.6rem;border-bottom:1px solid var(--line);}
-.scene-tag b{color:var(--pink);font-weight:700;}
-
-/* ===== generic panel ===== */
-.win{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
-.win-bar{display:flex;align-items:center;gap:.5rem;padding:.85rem 1.2rem;border-bottom:1px solid var(--line);}
-.dots{display:none;}
-.win-title{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.win-body{padding:1.7rem 1.8rem;}
-
-/* ===== pull-quote ===== */
-.note{background:transparent;border-left:2px solid var(--pink);padding:.15rem 0 .15rem 1.15rem;
-  font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;line-height:1.5;color:var(--ink-soft);}
-.note.pink,.note.mint,.note.green{background:transparent;color:var(--ink-soft);border-left-color:var(--pink);}
-.note::before{display:none;}
-
-/* ===== photo card ===== */
-.polaroid{background:var(--paper);padding:0;border-radius:2px;overflow:hidden;box-shadow:var(--shadow-sm);}
-.polaroid img{width:100%;height:auto;border-radius:0;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1);}
-.polaroid:hover img{transform:scale(1.045);}
-img{max-width:100%;}
-.polaroid .cap{font-family:'Inter',sans-serif;font-size:.66rem;font-weight:600;letter-spacing:.1em;
-  text-transform:uppercase;text-align:left;margin-top:.6rem;color:var(--ink-soft);}
-
-/* ===== HERO ===== */
-#hero{padding-top:.5rem;}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.4rem;align-items:center;}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;font-weight:700;
-  letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);}
-.hero-name{font-family:'Fraunces',serif;font-weight:600;line-height:.92;margin:1.1rem 0 .3rem;
-  font-size:clamp(3.2rem,7.4vw,5.6rem);letter-spacing:-.01em;color:var(--ink);}
-.hero-name .l1{color:var(--ink);}
-.hero-name .l2{color:var(--pink);font-style:italic;font-weight:500;}
-.hero-role{margin-top:1.2rem;font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);}
-.hero-metrics{display:flex;gap:0;margin-top:2.4rem;flex-wrap:wrap;border-top:1px solid var(--line);}
-.mtile{padding:1.15rem 1.4rem 0 0;min-width:120px;flex:1;border-right:1px solid var(--line);}
-.mtile:last-child{border-right:0;}
-.mtile .n{font-family:'Fraunces',serif;font-weight:600;font-size:1.7rem;color:var(--ink);line-height:1;}
-.mtile .n.b{color:var(--ink);}.mtile .n.p{color:var(--ink);}
-.mtile .l{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:.5rem;font-weight:600;}
-.hero-right{position:relative;}
-.hero-frame{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:.9rem;height:clamp(380px,42vw,540px);}
-.hero-frame figure{margin:0;overflow:hidden;position:relative;box-shadow:var(--shadow-sm);}
-.hero-frame .hf-main{grid-row:1/3;}
-.hero-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1);}
-.hero-frame figure:hover img{transform:scale(1.045);}
-.hero-tagline{font-family:'Fraunces',serif;font-style:italic;font-size:1rem;color:var(--ink-soft);
-  margin-top:1.3rem;line-height:1.5;border-left:2px solid var(--pink);padding-left:1.1rem;max-width:420px;}
-.sticker{display:none;}
-
-/* ===== two-col scenes ===== */
-.cols{display:grid;gap:2rem;margin-top:1.1rem;}
-.cols.s11{grid-template-columns:1fr 1fr;}
-.cols.s21{grid-template-columns:1.5fr 1fr;}
-.cols.s12{grid-template-columns:.85fr 1.15fr;}
-.stack{display:flex;flex-direction:column;gap:1.3rem;}
-
-.about-p{font-size:1rem;line-height:1.85;margin-bottom:1rem;color:var(--ink);}
-.about-p:last-child{margin-bottom:0;}
-.about-p .drop{font-family:'Fraunces',serif;font-weight:600;font-style:italic;color:var(--pink);font-size:1.15em;letter-spacing:.005em;}
-.loc-pin{display:inline-flex;align-items:center;gap:.45rem;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
-
-/* ===== metrics ===== */
-.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);}
-.stat{padding:1.5rem 1.6rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
-.stat-grid .stat:nth-child(3n){border-right:0;}
-.stat .num{font-family:'Fraunces',serif;font-weight:600;font-size:1.9rem;line-height:1;color:var(--ink);}
-.stat.key .num{color:var(--pink);}
-.stat .unit{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:.55rem;font-weight:600;}
-.stat .ctx{font-size:.76rem;color:var(--ink-soft);margin-top:.5rem;line-height:1.5;opacity:.85;}
-.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:0;border-top:1px solid var(--line);}
-.donut-card{padding:1.7rem 1.8rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
-.chart-row .donut-card:last-child{border-right:0;}
-.donut-card h4{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:1.1rem;font-weight:700;}
-.donut-wrap{display:flex;align-items:center;gap:1.3rem;}
-.donut{width:96px;height:96px;border-radius:50%;flex-shrink:0;position:relative;}
-.donut::after{content:"";position:absolute;inset:22px;background:var(--paper);border-radius:50%;}
-.legend{display:flex;flex-direction:column;gap:.55rem;font-size:.82rem;}
-.legend .row{display:flex;align-items:center;gap:.55rem;}
-.legend .sw{width:8px;height:8px;border-radius:1px;}
-.legend b{font-family:'Fraunces',serif;font-weight:600;margin-left:auto;}
-.bars{display:flex;flex-direction:column;gap:.85rem;margin-top:.2rem;padding:1.7rem 1.8rem;border-bottom:1px solid var(--line);}
-.bar-row .top{display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:.3rem;}
-.bar-row .top b{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);}
-.track{height:2px;background:var(--line);overflow:hidden;}
-.track>span{display:block;height:100%;background:var(--pink);}
-
-/* ===== nichos ===== */
-.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem 1rem;max-width:820px;margin:0 auto;}
-.app{text-align:center;max-width:230px;margin:0 auto;}
-.app .icon{width:52px;height:52px;margin:0 auto;border-radius:50%;display:flex;align-items:center;
-  justify-content:center;background:var(--paper-alt);color:var(--ink);border:1px solid var(--line);}
-.app .emoji{font-size:1.25rem;filter:grayscale(1) contrast(1.1);}
-.app .nm{font-size:.8rem;font-weight:600;margin-top:.7rem;letter-spacing:.02em;}
-.app .ds{font-size:.72rem;color:var(--ink-soft);line-height:1.45;margin-top:.2rem;}
-
-/* ===== portfolio gallery ===== */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin:0 0 2.6rem;}
-.gallery .polaroid{transform:none;}
-.gallery .polaroid img{aspect-ratio:4/5;}
-.reels-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;justify-items:center;}
-.reels-row iframe{width:100% !important;}
-
-/* ===== entrego ===== */
-.deliver{list-style:none;}
-.deliver li{display:grid;grid-template-columns:auto 1fr;gap:1.1rem;padding:1.15rem 0;border-bottom:1px solid var(--line);}
-.deliver li:last-child{border-bottom:none;}
-.deliver .no{font-family:'Fraunces',serif;font-weight:600;font-size:.92rem;color:var(--ink-soft);
-  width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;}
-.deliver .dt{font-family:'Fraunces',serif;font-weight:600;font-size:1.04rem;margin-bottom:.2rem;}
-.deliver .dd{font-size:.84rem;color:var(--ink-soft);line-height:1.55;}
-
-/* ===== processo ===== */
-.ios-h{font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;line-height:1.2;}
-.ios-sub{font-size:.84rem;color:var(--ink-soft);margin:.3rem 0 1rem;}
-.ios-check{list-style:none;display:flex;flex-direction:column;gap:.15rem;}
-.ios-check li+li{border-top:1px solid var(--line);}
-.ios-item{display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:start;
-  width:100%;text-align:left;background:transparent;border:0;cursor:pointer;
-  font-family:inherit;padding:.85rem .1rem;}
-.ios-item:hover{background:var(--paper-alt);}
-.ios-item:focus-visible{outline:2px solid var(--pink);outline-offset:2px;}
-.ios-item .tick{width:18px;height:18px;margin-top:.15rem;border-radius:50%;
-  border:1.5px solid var(--line);background:transparent;flex:0 0 auto;
-  display:flex;align-items:center;justify-content:center;transition:.18s ease;}
-.ios-item .tick::after{content:"";width:8px;height:4px;margin-top:-2px;
-  border-left:1.5px solid #fff;border-bottom:1.5px solid #fff;
-  transform:rotate(-45deg) scale(.4);opacity:0;transition:.18s ease;}
-.ios-item .txt{font-size:.84rem;color:var(--ink-soft);line-height:1.6;transition:.2s ease;}
-.ios-item .txt b{display:block;font-family:'Fraunces',serif;font-weight:600;
-  font-size:1.02rem;color:var(--ink);margin-bottom:.15rem;transition:.2s ease;}
-.ios-item[aria-pressed="true"] .tick{background:var(--pink);border-color:var(--pink);}
-.ios-item[aria-pressed="true"] .tick::after{opacity:1;transform:rotate(-45deg) scale(1);}
-.ios-item[aria-pressed="true"] .txt,
-.ios-item[aria-pressed="true"] .txt b{color:var(--ink-soft);opacity:.5;text-decoration:line-through;}
-@media(prefers-reduced-motion:reduce){.ios-item,.ios-item .tick,.ios-item .tick::after,.ios-item .txt{transition:none;}}
-
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
-.steps.steps-col{grid-template-columns:1fr;gap:0;margin-top:1rem;}
-.steps.steps-col .step{padding:1.15rem 0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent;}
-.steps.steps-col .step:last-child{border-bottom:0;}
-.steps.steps-col .step .sn{font-size:1.3rem;}
-.steps.steps-col .step h3{font-size:1.04rem;margin:.3rem 0 .35rem;}
-.steps.steps-col .step p{font-size:.82rem;}
-.how h3.fred{font-size:1.55rem;line-height:1.2;}
-.how .sub{font-size:.86rem;color:var(--ink-soft);margin-top:.4rem;}
-.step{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;}
-.step .sn{font-family:'Fraunces',serif;font-weight:600;font-size:1.7rem;line-height:1;color:var(--pink);}
-.step h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin:.6rem 0 .5rem;}
-.step p{font-size:.84rem;color:var(--ink-soft);line-height:1.6;}
-
-/* ===== marcas ===== */
-.brands-row{display:flex;align-items:flex-start;gap:1.1rem;margin-top:1.3rem;}
-.logo-pin{flex:0 0 auto;width:110px;padding-top:.5rem;}
-.logo-marquee{position:relative;flex:1 1 auto;min-width:0;overflow-x:auto;overflow-y:hidden;
-  -ms-overflow-style:none;scrollbar-width:none;overscroll-behavior-x:contain;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 2.5%,#000 94%,transparent 100%);
-  mask-image:linear-gradient(90deg,transparent 0,#000 2.5%,#000 94%,transparent 100%);}
-.logo-marquee::-webkit-scrollbar{display:none;}
-.logo-marquee{cursor:grab;user-select:none;-webkit-user-select:none;}
-.logo-track img{-webkit-user-drag:none;user-drag:none;pointer-events:none;}
-.logo-marquee.grabbing{cursor:grabbing;}
-.logo-marquee.grabbing .logo-badge{transform:none;}
-@media (hover:none){.logo-marquee{cursor:auto;}}
-.logo-track{display:flex;align-items:flex-start;gap:1.6rem;width:max-content;padding:.5rem .4rem 1.1rem;}
-.logo-item{width:100px;flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:.6rem;}
-.logo-badge{width:76px;height:76px;border-radius:50%;background:var(--paper);border:1px solid var(--line);
-  display:flex;align-items:center;justify-content:center;
-  padding:11px;overflow:hidden;transition:transform .25s ease, border-color .25s ease;}
-.logo-item:hover .logo-badge{transform:translateY(-3px);border-color:var(--pink);}
-.logo-badge img{max-width:100%;max-height:100%;object-fit:contain;display:block;}
-.logo-badge.bleed{padding:0;}
-.logo-badge.bleed img{width:100%;height:100%;object-fit:cover;}
-.logo-badge.mono{background:var(--paper);border-color:var(--line);
-  font-family:'Fraunces',serif;font-weight:500;font-size:1.3rem;color:var(--pink);letter-spacing:.02em;}
-.logo-badge.open{background:transparent;border:1px dashed var(--ink-soft);
-  font-family:'Fraunces',serif;font-weight:500;font-size:.86rem;letter-spacing:.01em;
-  color:var(--ink-soft);text-align:center;line-height:1.3;padding:8px;white-space:nowrap;}
-.logo-name{font-size:.66rem;font-weight:600;line-height:1.25;text-align:center;color:var(--ink-soft);}
-.logo-name.pin-cta{color:var(--pink);white-space:nowrap;font-size:.64rem;}
-.logo-item.wide{width:130px;}
-.logo-hint{font-size:.7rem;color:var(--ink-soft);margin-top:.3rem;display:flex;align-items:center;gap:.4rem;}
-.logo-nav{display:flex;align-items:center;gap:.4rem;flex:0 0 auto;padding-top:2rem;}
-.hint-mob{display:none;}
-.logo-arrow{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--paper);
-  color:var(--ink);font-size:1.05rem;line-height:1;cursor:pointer;
-  font-family:'Inter',system-ui,sans-serif;display:flex;align-items:center;justify-content:center;transition:.18s;}
-.logo-arrow:hover{color:var(--pink);border-color:var(--pink);}
-.logo-arrow:focus-visible{outline:2px solid var(--pink);outline-offset:2px;}
-@media (max-width:640px){
-  .brands-row{gap:.6rem;}
-  .logo-nav{display:none;}
-  .hint-mob{display:inline;}
-  .hint-desk{display:none;}
-  .logo-pin{width:92px;}
-  .logo-name.pin-cta{white-space:normal;font-size:.6rem;line-height:1.3;}
-  .logo-badge.open{font-size:.78rem;padding:6px;}
-  .logo-item{width:88px;}
-  .logo-badge{width:70px;height:70px;padding:9px;}
-  .logo-name{font-size:.62rem;}
-}
-
-/* ===== contato ===== */
-.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start;
-  padding-top:2rem;border-top:1px solid var(--line);}
-.contact-cta{font-family:'Fraunces',serif;font-size:clamp(1.8rem,3vw,2.3rem);font-weight:600;line-height:1.25;color:var(--ink);}
-.contact-sub{font-size:.9rem;color:var(--ink-soft);margin-top:.9rem;max-width:44ch;line-height:1.6;}
-.contact-email{display:inline-block;font-family:'Fraunces',serif;font-style:italic;font-size:1.5rem;
-  color:var(--pink);margin-top:1.6rem;border-bottom:1px solid transparent;transition:border-color .2s;}
-.contact-email:hover{border-color:var(--pink);}
-.contact-reply{font-size:.76rem;color:var(--ink-soft);margin-top:.8rem;letter-spacing:.03em;}
-.socials{display:flex;flex-direction:column;}
-.soc{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:1.05rem 0;
-  border-bottom:1px solid var(--line);transition:.18s;}
-.soc:hover{padding-left:.4rem;}
-.soc:hover .hd{color:var(--pink);}
-.soc .net{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;}
-.soc .hd{font-family:'Fraunces',serif;font-weight:500;font-size:1rem;color:var(--ink);transition:color .18s;}
-
-footer{text-align:center;padding:3rem 2rem 2rem;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--ink-soft);position:relative;z-index:2;border-top:1px solid var(--line);margin-top:1rem;}
-
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);}
-.reveal.vis{opacity:1;transform:none;}
-
-@media(max-width:860px){
-  .hero-grid,.contact-grid{grid-template-columns:1fr;}
-  .cols.s11,.cols.s21,.cols.s12{grid-template-columns:1fr;}
-  .chart-row{grid-template-columns:1fr;}
-  .chart-row .donut-card{border-right:0;}
-  .apps{grid-template-columns:repeat(3,1fr);}
-  .gallery{grid-template-columns:1fr 1fr;}
-  .reels-row{grid-template-columns:1fr 1fr;}
-  .steps{grid-template-columns:1fr;}
-  .hero-frame{height:420px;margin-top:1rem;}
-}
-@media(max-width:540px){
-  .board{padding:2.2rem 1.1rem 3.5rem;}
-  .scene{margin-bottom:3.6rem;}
-  .stat-grid{grid-template-columns:1fr 1fr;}
-  .stat-grid .stat:nth-child(3n){border-right:1px solid var(--line);}
-  .stat-grid .stat:nth-child(2n){border-right:0;}
-  .apps{grid-template-columns:repeat(2,1fr);}
-  .gallery{grid-template-columns:1fr 1fr;}
-  .reels-row{grid-template-columns:1fr;}
-  .hero-metrics{flex-wrap:wrap;}
-  .mtile{min-width:45%;}
-}
-@media(max-width:640px){
-  .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;
-    width:38px;height:38px;border:1px solid var(--line);cursor:pointer;background:var(--paper);flex:0 0 auto;}
-  .menu-toggle span{display:block;width:16px;height:1.5px;background:var(--ink);transition:.25s;}
-  .menu-toggle.open span:nth-child(1){transform:translateY(5.5px) rotate(45deg);}
-  .menu-toggle.open span:nth-child(2){opacity:0;}
-  .menu-toggle.open span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg);}
-  .menu-nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;
-    gap:0;overflow:hidden;max-height:0;opacity:0;pointer-events:none;
-    background:rgba(250,246,240,.98);border-bottom:1px solid var(--line);
-    transition:max-height .28s ease,opacity .2s ease;}
-  .menu-nav.open{max-height:85vh;opacity:1;pointer-events:auto;padding:.4rem 1.4rem 1rem;}
-  .menu-nav a{font-size:.92rem;padding:.85rem 0;width:100%;border-bottom:1px solid var(--line-soft);}
-  .menu-nav a::after{display:none;}
-  .menu-nav a.cta{text-align:center;margin:.6rem 0 0;border-bottom:1px solid var(--ink);}
-}
-@media(prefers-reduced-motion:reduce){
-  .reveal{opacity:1;transform:none;transition:none;}
-  html{scroll-behavior:auto;}
-}
-</style>
+  <title>Abia Campos · Mídia Kit 2026</title>
+  <meta name="description"
+    content="Mídia kit · Abia Campos · Criadora de Conteúdo · Moda, beleza &amp; lifestyle · Goiânia, GO" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Abia Campos" />
+  <meta property="og:title" content="Abia Campos · Mídia Kit 2026" />
+  <meta property="og:description" content="Criadora de Conteúdo · Moda, beleza &amp; lifestyle · Goiânia, GO" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <!-- TODO: atualizar para o domínio real quando o site for publicado -->
+  <meta property="og:url" content="https://abiacampos.example.com/" />
+  <!-- TODO: subir capa-abia.jpg (1200x630px) na raiz do projeto, junto do index.html -->
+  <meta property="og:image" content="https://abiacampos.example.com/capa-abia.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Abia Campos · Mídia Kit 2026" />
+  <link rel="canonical" href="https://abiacampos.example.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abia Campos · Mídia Kit 2026" />
+  <meta name="twitter:description" content="Criadora de Conteúdo · Moda, beleza &amp; lifestyle · Goiânia, GO" />
+  <meta name="twitter:image" content="https://abiacampos.example.com/capa-abia.jpg" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23faf6f0'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='58' text-anchor='middle' fill='%237c2f34'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-<div class="progress-bar" id="progressBar"></div>
+  <div class="progress-bar" id="progressBar"></div>
 
-<header class="menubar" id="menubar">
-  <div class="menu-inner">
-    <a href="#hero" class="menu-brand"><span class="nm">Abia Campos</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="menu-nav" id="menuNav">
-      <a href="#sobre">Sobre</a>
-      <a href="#metricas">Métricas</a>
-      <a href="#nichos">Nichos</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#entrego">Processo</a>
-      <a href="#marcas">Marcas</a>
-      <a href="#contato" class="cta">Contato</a>
-    </nav>
-    <span class="menu-clock" id="clock">--:--</span>
-  </div>
-</header>
+  <header class="menubar" id="menubar">
+    <div class="menu-inner">
+      <a href="#hero" class="menu-brand"><span class="nm">Abia Campos</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu-nav" id="menuNav">
+        <a href="#sobre">Sobre</a>
+        <a href="#metricas">Métricas</a>
+        <a href="#nichos">Nichos</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#entrego">Processo</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#modelo">Modelo</a>
+        <a class="cta"
+          href="https://wa.me/5562999254234?text=Oi%2C%20Abia!%20Vamos%20conversar%3F%20Quero%20te%20apresentar%20minha%20ideia%20pra%20gente%20construir%20o%20or%C3%A7amento%20juntas!%20%F0%9F%92%96"
+          target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+      <span class="menu-clock" id="clock">--:--</span>
+    </div>
+  </header>
 
-<main class="board">
+  <main class="board">
 
-  <!-- HERO -->
-  <section class="scene" id="hero">
-    <div class="hero-grid">
-      <div class="reveal">
-        <span class="hero-eyebrow">Mídia Kit — Agosto 2026</span>
-        <h1 class="hero-name"><span class="l1">Abia</span><br><span class="l2">Campos</span></h1>
-        <div class="hero-role">Criadora de Conteúdo · Moda &amp; Beleza</div>
-        <div class="hero-metrics">
-          <div class="mtile"><div class="n">60,1%</div><div class="l">público feminino</div></div>
-          <div class="mtile"><div class="n b">40,9%</div><div class="l">25-34 anos</div></div>
-          <div class="mtile"><div class="n p">75,8%</div><div class="l">público no Brasil</div></div>
+    <!-- HERO -->
+    <section class="scene" id="hero">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="hero-eyebrow">Mídia Kit — Agosto 2026</span>
+          <h1 class="hero-name"><span class="l1">Abia</span><br><span class="l2">Campos</span></h1>
+          <div class="hero-role">Criadora de Conteúdo · Moda &amp; Beleza</div>
+          <div class="hero-metrics">
+            <div class="mtile">
+              <div class="n">60,1%</div>
+              <div class="l">público feminino</div>
+            </div>
+            <div class="mtile">
+              <div class="n b">40,9%</div>
+              <div class="l">25-34 anos</div>
+            </div>
+            <div class="mtile">
+              <div class="n p">75,8%</div>
+              <div class="l">público no Brasil</div>
+            </div>
+          </div>
         </div>
-      </div>
         <div class="hero-right reveal">
           <div class="hero-frame">
-            <figure class="hf-main"><img src="images/1.jpeg" width="700" height="875" decoding="async" fetchpriority="high" alt="Abia sorrindo"/></figure>
-            <figure class="hf-side"><img src="images/3.jpeg" width="520" height="389" decoding="async" alt="Abia produzida"/></figure>
-            <figure class="hf-side"><img src="images/11.jpeg" width="520" height="389" decoding="async" alt="Abia em produção para evento"/></figure>
+            <figure class="hf-main"><img src="images/1.jpeg" width="700" height="875" decoding="async"
+                fetchpriority="high" alt="Abia sorrindo" /></figure>
+            <figure class="hf-side"><img src="images/3.jpeg" width="520" height="389" decoding="async"
+                alt="Abia produzida" /></figure>
+            <figure class="hf-side"><img src="images/11.jpeg" width="520" height="389" decoding="async"
+                alt="Abia em produção para evento" /></figure>
           </div>
           <p class="hero-tagline">Sua marca recomendada por uma voz que a audiência realmente ouve e responde.</p>
         </div>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section class="scene" id="sobre">
-    <span class="scene-tag reveal"><b>01</b> · Sobre</span>
-    <div class="cols s12">
-      <div class="stack reveal">
-        <div class="polaroid"><img src="images/7.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia"/></div>
       </div>
-      <div class="stack reveal">
-        <div class="win">
-          <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Sobre a Abia</span></div>
-          <div class="win-body">
-            <p class="about-p"><span class="drop">Pode me chamar de Abia.</span> Tenho 18 anos e sou de Goiânia (GO). Sou criadora de conteúdo e adoro tudo que envolve moda, beleza e maquiagem — sempre em busca de um look novo pra mostrar ou uma dica pra compartilhar.</p>
-            <p class="about-p">Meu dia a dia também entra no conteúdo: rotina, momentos reais e um pouco de lifestyle pra quem me acompanha se identificar. Gosto de criar de um jeito autêntico, sem perder a leveza.</p>
-          </div>
-        </div>
-        <div class="note">Faço porque amo criar, me arrumar e compartilhar um pouco do meu dia a dia com quem me acompanha.</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- METRICAS -->
-  <section class="scene" id="metricas">
-    <span class="scene-tag reveal"><b>02</b> · Métricas</span>
-    <div class="win reveal" style="margin-top:1.1rem;">
-      <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Instagram Insights — Agosto 2026</span></div>
-      <div class="win-body">
-        <div class="stat-grid">
-          <div class="stat key"><div class="num">60,1%</div><div class="unit">Público feminino</div><div class="ctx">Maior parte da audiência no Instagram</div></div>
-          <div class="stat"><div class="num">40,9%</div><div class="unit">25 a 34 anos</div><div class="ctx">Faixa etária mais presente no público</div></div>
-          <div class="stat"><div class="num">23,5%</div><div class="unit">18 a 24 anos</div><div class="ctx">Segunda maior faixa etária</div></div>
-          <div class="stat key"><div class="num">75,8%</div><div class="unit">Público no Brasil</div><div class="ctx">Restante entre EUA, Índia, Reino Unido e outros países</div></div>
-          <div class="stat"><div class="num">Em breve</div><div class="unit">Alcance &amp; engajamento</div><div class="ctx">Métricas de desempenho serão atualizadas em breve</div></div>
-          <div class="stat"><div class="num">18</div><div class="unit">Anos</div><div class="ctx">Criadora de conteúdo em Goiânia (GO)</div></div>
+    <!-- SOBRE -->
+    <section class="scene" id="sobre">
+      <span class="scene-tag reveal"><b>01</b> · Sobre</span>
+      <div class="cols s12">
+        <div class="stack reveal">
+          <div class="polaroid"><img src="images/7.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+              alt="Abia" /></div>
         </div>
-
-        <div class="chart-row">
-          <div class="donut-card">
-            <h4>Gênero · seguidores</h4>
-            <div class="donut-wrap">
-              <div class="donut" style="background:conic-gradient(var(--pink) 0 60.1%, var(--green) 60.1% 100%);"></div>
-              <div class="legend">
-                <div class="row"><span class="sw" style="background:var(--pink)"></span>Mulheres <b>60,1%</b></div>
-                <div class="row"><span class="sw" style="background:var(--green)"></span>Homens <b>39,9%</b></div>
-              </div>
+        <div class="stack reveal">
+          <div class="win">
+            <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Sobre a
+                Abia</span></div>
+            <div class="win-body">
+              <p class="about-p"><span class="drop">Pode me chamar de Abia.</span> Tenho 18 anos e sou de Goiânia (GO).
+                Sou criadora de conteúdo e adoro tudo que envolve moda, beleza e maquiagem — sempre em busca de um look
+                novo pra mostrar ou uma dica pra compartilhar.</p>
+              <p class="about-p">Meu dia a dia também entra no conteúdo: rotina, momentos reais e um pouco de lifestyle
+                pra quem me acompanha se identificar. Gosto de criar de um jeito autêntico, sem perder a leveza.</p>
             </div>
           </div>
-          <div class="donut-card">
-            <h4>Faixa etária</h4>
-            <div class="donut-wrap">
-              <div class="donut" style="background:conic-gradient(var(--pink) 0 40.9%, var(--green) 40.9% 64.4%, var(--gold) 64.4% 82.2%, var(--mint) 82.2% 92.9%, #e6dac4 92.9% 100%);"></div>
-              <div class="legend">
-                <div class="row"><span class="sw" style="background:var(--pink)"></span>25-34 <b>40,9%</b></div>
-                <div class="row"><span class="sw" style="background:var(--green)"></span>18-24 <b>23,5%</b></div>
-                <div class="row"><span class="sw" style="background:var(--gold)"></span>35-44 <b>17,8%</b></div>
-                <div class="row"><span class="sw" style="background:var(--mint)"></span>45-54 <b>10,7%</b></div>
-                <div class="row"><span class="sw" style="background:#e6dac4"></span>Outras <b>7,2%</b></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="donut-card" style="margin-top:1.1rem;">
-          <h4>Principais países</h4>
-          <div class="bars">
-            <div class="bar-row"><div class="top"><span>Brasil</span><b>75,8%</b></div><div class="track"><span style="width:100%"></span></div></div>
-            <div class="bar-row"><div class="top"><span>Estados Unidos</span><b>7,5%</b></div><div class="track"><span style="width:10%"></span></div></div>
-            <div class="bar-row"><div class="top"><span>Índia</span><b>3,8%</b></div><div class="track"><span style="width:5%"></span></div></div>
-            <div class="bar-row"><div class="top"><span>Reino Unido</span><b>1,4%</b></div><div class="track"><span style="width:2%"></span></div></div>
-            <div class="bar-row"><div class="top"><span>Bangladesh</span><b>1,2%</b></div><div class="track"><span style="width:2%"></span></div></div>
-          </div>
-          <p style="font-size:.74rem;color:var(--ink-soft);margin-top:.9rem;">Público majoritariamente brasileiro: <strong style="color:var(--ink);">75,8%</strong> · Dados do Instagram Insights, agosto/2026. Nada estimado, nada inflado.</p>
-          <div class="note mint" style="margin-top:1.4rem;">Não é sobre quantos me seguem. É sobre quantos param, confiam e vão atrás.</div>
+          <div class="note">Faço porque amo criar, me arrumar e compartilhar um pouco do meu dia a dia com quem me
+            acompanha.</div>
+          <a class="whatsapp-btn"
+            href="https://wa.me/5562999254234?text=Oi%2C%20Abia!%20Vamos%20conversar%3F%20Quero%20te%20apresentar%20minha%20ideia%20pra%20gente%20construir%20o%20or%C3%A7amento%20juntas!%20%F0%9F%92%96"
+            target="_blank" rel="noopener" aria-label="Chamar Abia no WhatsApp" style="align-self:flex-start;">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.78-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.72.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z" />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.08L2 22l5.08-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18.02a8.02 8.02 0 0 1-4.08-1.11l-.29-.18-3.02.8.81-2.95-.19-.3A8.01 8.01 0 1 1 20.01 12 8.02 8.02 0 0 1 12 20.02Z" />
+            </svg>
+            Chamar no WhatsApp
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- NICHOS -->
-  <section class="scene" id="nichos">
-    <span class="scene-tag reveal"><b>03</b> · Nichos</span>
-    <div class="win reveal" style="margin-top:1.1rem;">
-      <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">o que você vai encontrar</span></div>
-      <div class="win-body">
-        <div class="apps">
-          <div class="app"><div class="icon"><span class="emoji">👗</span></div><div class="nm">Moda</div><div class="ds">Looks, referências e produções de styling</div></div>
-          <div class="app"><div class="icon"><span class="emoji">💄</span></div><div class="nm">Maquiagem</div><div class="ds">Tutoriais, testes e inspirações de make</div></div>
-          <div class="app"><div class="icon"><span class="emoji">🧴</span></div><div class="nm">Beleza</div><div class="ds">Skincare, cuidados e rotina de beleza</div></div>
-          <div class="app"><div class="icon"><span class="emoji">🌿</span></div><div class="nm">Lifestyle</div><div class="ds">Dia a dia, rotina e momentos reais</div></div>
-          <div class="app"><div class="icon"><span class="emoji">🔎</span></div><div class="nm">Reviews &amp; Testes</div><div class="ds">Opiniões sinceras sobre o que testa</div></div>
-          <div class="app"><div class="icon"><span class="emoji">🎬</span></div><div class="nm">UGC</div><div class="ds">Conteúdo autêntico pra sua marca</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="scene" id="portfolio">
-    <span class="scene-tag reveal"><b>04</b> · Portfólio</span>
-    <h2 class="fred reveal" style="font-size:1.5rem;margin:.9rem 0 1.1rem;">Um retrato do meu <span style="color:var(--pink);font-style:italic;">estilo</span></h2>
-    <div class="gallery reveal">
-      <div class="polaroid"><img src="images/2.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia produzida"/><div class="cap">produção do dia</div></div>
-      <div class="polaroid"><img src="images/4.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia sorrindo de lado"/><div class="cap">clique favorito</div></div>
-      <div class="polaroid"><img src="images/5.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia à vontade"/><div class="cap">à vontade</div></div>
-      <div class="polaroid"><img src="images/6.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia com look branco"/><div class="cap">todo estilo</div></div>
-      <div class="polaroid"><img src="images/8.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia de preto"/><div class="cap">meu jeito</div></div>
-      <div class="polaroid"><img src="images/9.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia olhando pra câmera"/><div class="cap">confiança em cada detalhe</div></div>
-      <div class="polaroid"><img src="images/10.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia com look amarelo"/><div class="cap">cores que combinam comigo</div></div>
-      <div class="polaroid"><img src="images/12.jpeg" width="800" height="1000" loading="lazy" decoding="async" alt="Abia em evento"/><div class="cap">dia especial</div></div>
-    </div>
-
-    <h3 class="fred reveal" style="font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:2.8rem 0 1.2rem;">Últimos Reels</h3>
-    <div class="reels-row reveal">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIJkxo8Rxpy/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DIJkxo8Rxpy/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFWL8TBOrmV/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DFWL8TBOrmV/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFQ0oVbPH3U/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DFQ0oVbPH3U/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEqoP99OkPZ/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DEqoP99OkPZ/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DElecU-uQ5z/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DElecU-uQ5z/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DAHV6fDyfGd/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DAHV6fDyfGd/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C7CyvvEOqce/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/C7CyvvEOqce/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Db6ksA8KlUp/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/Db6ksA8KlUp/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbeH7y_vTPr/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DbeH7y_vTPr/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbZGGxnvaza/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DbZGGxnvaza/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbT05UIPAAT/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DbT05UIPAAT/" target="_blank" rel="noopener"></a></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTvDLJekRsy/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DTvDLJekRsy/" target="_blank" rel="noopener"></a></blockquote>
-    </div>
-
-    <h3 class="fred reveal" style="font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:2.8rem 0 1.2rem;">Últimos TikToks</h3>
-    <div class="reels-row reveal">
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@abiacamposs/photo/7672883734084930837" data-video-id="7672883734084930837"><section><a target="_blank" href="https://www.tiktok.com/@abiacamposs/photo/7672883734084930837"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7670759083942710548" data-video-id="7670759083942710548"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7670759083942710548"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7667415360680889621" data-video-id="7667415360680889621"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7667415360680889621"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7657280751620181268" data-video-id="7657280751620181268"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7657280751620181268"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7624578920746192149" data-video-id="7624578920746192149"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7624578920746192149"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7623621863444614421" data-video-id="7623621863444614421"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7623621863444614421"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7621248469914750228" data-video-id="7621248469914750228"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7621248469914750228"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7610187355848264980" data-video-id="7610187355848264980"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7610187355848264980"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7568714754961837320" data-video-id="7568714754961837320"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7568714754961837320"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7540419838653582648" data-video-id="7540419838653582648"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7540419838653582648"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7537837686124563768" data-video-id="7537837686124563768"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7537837686124563768"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7537522070943452422" data-video-id="7537522070943452422"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7537522070943452422"></a></section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsdailybia/video/7537126935093071160" data-video-id="7537126935093071160"><section><a target="_blank" href="https://www.tiktok.com/@itsdailybia/video/7537126935093071160"></a></section></blockquote>
-    </div>
-  </section>
-
-  <!-- ENTREGO + COMO TRABALHO -->
-  <section class="scene" id="entrego">
-    <span class="scene-tag reveal"><b>05</b> · Processo</span>
-    <div class="cols s21">
-      <div class="win reveal">
-        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">o que sua marca recebe</span></div>
+    <!-- METRICAS -->
+    <section class="scene" id="metricas">
+      <span class="scene-tag reveal"><b>02</b> · Métricas</span>
+      <div class="win reveal" style="margin-top:1.1rem;">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Instagram Insights —
+            Agosto 2026</span></div>
         <div class="win-body">
-          <ul class="deliver">
-            <li><span class="no">01</span><div><div class="dt">Stories com engajamento</div><div class="dd">Sua marca entra numa conversa que já está acontecendo.</div></div></li>
-            <li><span class="no">02</span><div><div class="dt">Reels autênticos</div><div class="dd">Um dos formatos que mais engajam. Feitos pra prender atenção até o fim.</div></div></li>
-            <li><span class="no">03</span><div><div class="dt">Feed com texto que conecta</div><div class="dd">Carrosséis e fotos com escrita que convence. Eu também escrevo, não só gravo.</div></div></li>
-            <li><span class="no">04</span><div><div class="dt">Review honesto</div><div class="dd">Produto em uso na minha rotina, com opinião real no meu estilo.</div></div></li>
-            <li><span class="no">05</span><div><div class="dt">UGC pra sua marca usar</div><div class="dd">Conteúdo sob medida, pronto pros seus canais e mídia paga. Direitos conforme contrato.</div></div></li>
-          </ul>
+          <div class="stat-grid">
+            <div class="stat key">
+              <div class="num">60,1%</div>
+              <div class="unit">Público feminino</div>
+              <div class="ctx">Maior parte da audiência no Instagram</div>
+            </div>
+            <div class="stat">
+              <div class="num">40,9%</div>
+              <div class="unit">25 a 34 anos</div>
+              <div class="ctx">Faixa etária mais presente no público</div>
+            </div>
+            <div class="stat">
+              <div class="num">23,5%</div>
+              <div class="unit">18 a 24 anos</div>
+              <div class="ctx">Segunda maior faixa etária</div>
+            </div>
+            <div class="stat key">
+              <div class="num">75,8%</div>
+              <div class="unit">Público no Brasil</div>
+              <div class="ctx">Restante entre EUA, Índia, Reino Unido e outros países</div>
+            </div>
+            <div class="stat">
+              <div class="num">Em breve</div>
+              <div class="unit">Alcance &amp; engajamento</div>
+              <div class="ctx">Métricas de desempenho serão atualizadas em breve</div>
+            </div>
+            <div class="stat">
+              <div class="num">18</div>
+              <div class="unit">Anos</div>
+              <div class="ctx">Criadora de conteúdo em Goiânia (GO)</div>
+            </div>
+          </div>
+
+          <div class="chart-row">
+            <div class="donut-card">
+              <h4>Gênero · seguidores</h4>
+              <div class="donut-wrap">
+                <div class="donut" style="background:conic-gradient(var(--pink) 0 60.1%, var(--green) 60.1% 100%);">
+                </div>
+                <div class="legend">
+                  <div class="row"><span class="sw" style="background:var(--pink)"></span>Mulheres <b>60,1%</b></div>
+                  <div class="row"><span class="sw" style="background:var(--green)"></span>Homens <b>39,9%</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="donut-card">
+              <h4>Faixa etária</h4>
+              <div class="donut-wrap">
+                <div class="donut"
+                  style="background:conic-gradient(var(--pink) 0 40.9%, var(--green) 40.9% 64.4%, var(--gold) 64.4% 82.2%, var(--mint) 82.2% 92.9%, #e6dac4 92.9% 100%);">
+                </div>
+                <div class="legend">
+                  <div class="row"><span class="sw" style="background:var(--pink)"></span>25-34 <b>40,9%</b></div>
+                  <div class="row"><span class="sw" style="background:var(--green)"></span>18-24 <b>23,5%</b></div>
+                  <div class="row"><span class="sw" style="background:var(--gold)"></span>35-44 <b>17,8%</b></div>
+                  <div class="row"><span class="sw" style="background:var(--mint)"></span>45-54 <b>10,7%</b></div>
+                  <div class="row"><span class="sw" style="background:#e6dac4"></span>Outras <b>7,2%</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="donut-card" style="margin-top:1.1rem;">
+            <h4>Principais países</h4>
+            <div class="bars">
+              <div class="bar-row">
+                <div class="top"><span>Brasil</span><b>75,8%</b></div>
+                <div class="track"><span style="width:100%"></span></div>
+              </div>
+              <div class="bar-row">
+                <div class="top"><span>Estados Unidos</span><b>7,5%</b></div>
+                <div class="track"><span style="width:10%"></span></div>
+              </div>
+              <div class="bar-row">
+                <div class="top"><span>Índia</span><b>3,8%</b></div>
+                <div class="track"><span style="width:5%"></span></div>
+              </div>
+              <div class="bar-row">
+                <div class="top"><span>Reino Unido</span><b>1,4%</b></div>
+                <div class="track"><span style="width:2%"></span></div>
+              </div>
+              <div class="bar-row">
+                <div class="top"><span>Bangladesh</span><b>1,2%</b></div>
+                <div class="track"><span style="width:2%"></span></div>
+              </div>
+            </div>
+            <p style="font-size:.74rem;color:var(--ink-soft);margin-top:.9rem;">Público majoritariamente brasileiro:
+              <strong style="color:var(--ink);">75,8%</strong> · Dados do Instagram Insights, agosto/2026. Nada
+              estimado, nada inflado.</p>
+            <div class="note mint" style="margin-top:1.4rem;">Não é sobre quantos me seguem. É sobre quantos param,
+              confiam e vão atrás.</div>
+          </div>
         </div>
       </div>
-      <div class="how reveal">
-        <div class="win">
-          <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">como eu trabalho</span></div>
+    </section>
+
+    <!-- NICHOS -->
+    <section class="scene" id="nichos">
+      <span class="scene-tag reveal"><b>03</b> · Nichos</span>
+      <div class="win reveal" style="margin-top:1.1rem;">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">o que você vai
+            encontrar</span></div>
+        <div class="win-body">
+          <div class="niche-grid">
+            <div class="niche">
+              <div class="niche-nm">Moda</div>
+              <div class="niche-ds">Looks, referências e produções de styling</div>
+            </div>
+            <div class="niche">
+              <div class="niche-nm">Maquiagem</div>
+              <div class="niche-ds">Tutoriais, testes e inspirações de make</div>
+            </div>
+            <div class="niche">
+              <div class="niche-nm">Beleza</div>
+              <div class="niche-ds">Skincare, cuidados e rotina de beleza</div>
+            </div>
+            <div class="niche">
+              <div class="niche-nm">Lifestyle</div>
+              <div class="niche-ds">Dia a dia, rotina e momentos reais</div>
+            </div>
+            <div class="niche">
+              <div class="niche-nm">Reviews &amp; Testes</div>
+              <div class="niche-ds">Opiniões sinceras sobre o que testa</div>
+            </div>
+            <div class="niche">
+              <div class="niche-nm">UGC</div>
+              <div class="niche-ds">Conteúdo autêntico pra sua marca</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="scene" id="portfolio">
+      <span class="scene-tag reveal"><b>04</b> · Portfólio</span>
+      <h2 class="fred reveal" style="font-size:1.5rem;margin:.9rem 0 1.1rem;">Um retrato do meu <span
+          style="color:var(--pink);font-style:italic;">estilo</span></h2>
+      <div class="gallery reveal">
+        <div class="polaroid"><img src="images/2.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia produzida" />
+          <div class="cap">produção do dia</div>
+        </div>
+        <div class="polaroid"><img src="images/4.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia sorrindo de lado" />
+          <div class="cap">clique favorito</div>
+        </div>
+        <div class="polaroid"><img src="images/5.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia à vontade" />
+          <div class="cap">à vontade</div>
+        </div>
+        <div class="polaroid"><img src="images/6.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia com look branco" />
+          <div class="cap">todo estilo</div>
+        </div>
+        <div class="polaroid"><img src="images/8.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia de preto" />
+          <div class="cap">meu jeito</div>
+        </div>
+        <div class="polaroid"><img src="images/9.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia olhando pra câmera" />
+          <div class="cap">confiança em cada detalhe</div>
+        </div>
+        <div class="polaroid"><img src="images/10.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia com look amarelo" />
+          <div class="cap">cores que combinam comigo</div>
+        </div>
+        <div class="polaroid"><img src="images/12.jpeg" width="800" height="1000" loading="lazy" decoding="async"
+            alt="Abia em evento" />
+          <div class="cap">dia especial</div>
+        </div>
+      </div>
+
+      <h3 class="fred reveal" style="font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:2.8rem 0 1.2rem;">
+        Últimos Reels</h3>
+      <div class="reels-row reveal">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIJkxo8Rxpy/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DIJkxo8Rxpy/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFWL8TBOrmV/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DFWL8TBOrmV/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFQ0oVbPH3U/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DFQ0oVbPH3U/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEqoP99OkPZ/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DEqoP99OkPZ/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DElecU-uQ5z/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DElecU-uQ5z/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DAHV6fDyfGd/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DAHV6fDyfGd/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C7CyvvEOqce/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/C7CyvvEOqce/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Db6ksA8KlUp/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/Db6ksA8KlUp/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbeH7y_vTPr/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DbeH7y_vTPr/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbZGGxnvaza/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DbZGGxnvaza/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbT05UIPAAT/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DbT05UIPAAT/" target="_blank"
+            rel="noopener"></a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTvDLJekRsy/"
+          data-instgrm-version="14"><a href="https://www.instagram.com/reel/DTvDLJekRsy/" target="_blank"
+            rel="noopener"></a></blockquote>
+      </div>
+
+      <h3 class="fred reveal" style="font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:2.8rem 0 1.2rem;">
+        Últimos TikToks</h3>
+      <div class="reels-row reveal">
+        <a class="tt-card" href="https://www.tiktok.com/@itsdailybia/video/7657280751620181268" target="_blank" rel="noopener">
+          <img src="images/tiktok/7657280751620181268.jpg" width="576" height="1024" loading="lazy" decoding="async" alt="Vídeo no TikTok"/>
+          <span class="tt-play" aria-hidden="true">&#9654;</span>
+          <span class="tt-badge">TikTok</span>
+        </a>
+        <a class="tt-card" href="https://www.tiktok.com/@itsdailybia/video/7623621863444614421" target="_blank" rel="noopener">
+          <img src="images/tiktok/7623621863444614421.jpg" width="576" height="1024" loading="lazy" decoding="async" alt="Vídeo no TikTok"/>
+          <span class="tt-play" aria-hidden="true">&#9654;</span>
+          <span class="tt-badge">TikTok</span>
+        </a>
+        <a class="tt-card" href="https://www.tiktok.com/@itsdailybia/video/7568714754961837320" target="_blank" rel="noopener">
+          <img src="images/tiktok/7568714754961837320.jpg" width="576" height="1024" loading="lazy" decoding="async" alt="Vídeo no TikTok"/>
+          <span class="tt-play" aria-hidden="true">&#9654;</span>
+          <span class="tt-badge">TikTok</span>
+        </a>
+        <a class="tt-card" href="https://www.tiktok.com/@itsdailybia/video/7540419838653582648" target="_blank" rel="noopener">
+          <img src="images/tiktok/7540419838653582648.jpg" width="576" height="1024" loading="lazy" decoding="async" alt="Vídeo no TikTok"/>
+          <span class="tt-play" aria-hidden="true">&#9654;</span>
+          <span class="tt-badge">TikTok</span>
+        </a>
+        <a class="tt-card" href="https://www.tiktok.com/@itsdailybia/video/7537522070943452422" target="_blank" rel="noopener">
+          <img src="images/tiktok/7537522070943452422.jpg" width="576" height="1024" loading="lazy" decoding="async" alt="Vídeo no TikTok"/>
+          <span class="tt-play" aria-hidden="true">&#9654;</span>
+          <span class="tt-badge">TikTok</span>
+        </a>
+        <a class="tt-card" href="https://www.tiktok.com/@itsdailybia/video/7537126935093071160" target="_blank" rel="noopener">
+          <img src="images/tiktok/7537126935093071160.jpg" width="576" height="1024" loading="lazy" decoding="async" alt="Vídeo no TikTok"/>
+          <span class="tt-play" aria-hidden="true">&#9654;</span>
+          <span class="tt-badge">TikTok</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ENTREGO + COMO TRABALHO -->
+    <section class="scene" id="entrego">
+      <span class="scene-tag reveal"><b>05</b> · Processo</span>
+      <div class="cols s21">
+        <div class="win reveal">
+          <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">o que sua marca
+              recebe</span></div>
           <div class="win-body">
-            <h3 class="ios-h">Do briefing à entrega</h3>
-            <p class="ios-sub">Não vendo seguidores. Vendo confiança.</p>
-            <ul class="ios-check">
-              <li><button type="button" class="ios-item" aria-pressed="false"><span class="tick" aria-hidden="true"></span><span class="txt"><b>Alinhamento</b>A gente define o objetivo e os limites da campanha. Quanto mais detalhe, mais o conteúdo sai com a cara da sua marca.</span></button></li>
-              <li><button type="button" class="ios-item" aria-pressed="false"><span class="tick" aria-hidden="true"></span><span class="txt"><b>Criação</b>Prazo ideal de 7 dias pra gravar e editar com calma, e sempre que dá eu testo o produto antes. O prazo pode ser ajustado conforme o contrato, é só a gente conversar.</span></button></li>
-              <li><button type="button" class="ios-item" aria-pressed="false"><span class="tick" aria-hidden="true"></span><span class="txt"><b>Entrega</b>Material cru ou já editado com legendas, como você preferir. Se quiser, mando o print dos Insights depois.</span></button></li>
+            <ul class="deliver">
+              <li><span class="no">01</span>
+                <div>
+                  <div class="dt">Stories com engajamento</div>
+                  <div class="dd">Sua marca entra numa conversa que já está acontecendo.</div>
+                </div>
+              </li>
+              <li><span class="no">02</span>
+                <div>
+                  <div class="dt">Reels autênticos</div>
+                  <div class="dd">Um dos formatos que mais engajam. Feitos pra prender atenção até o fim.</div>
+                </div>
+              </li>
+              <li><span class="no">03</span>
+                <div>
+                  <div class="dt">Feed com texto que conecta</div>
+                  <div class="dd">Carrosséis e fotos com escrita que convence. Eu também escrevo, não só gravo.</div>
+                </div>
+              </li>
+              <li><span class="no">04</span>
+                <div>
+                  <div class="dt">Review honesto</div>
+                  <div class="dd">Produto em uso na minha rotina, com opinião real no meu estilo.</div>
+                </div>
+              </li>
+              <li><span class="no">05</span>
+                <div>
+                  <div class="dt">UGC pra sua marca usar</div>
+                  <div class="dd">Conteúdo sob medida, pronto pros seus canais e mídia paga. Direitos conforme contrato.
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MARCAS -->
-  <section class="scene" id="marcas">
-    <span class="scene-tag reveal"><b>06</b> · Marcas</span>
-    <div class="win reveal" style="margin-top:1.1rem;">
-      <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">marcas que já confiaram</span></div>
-      <div class="win-body">
-        <p class="about-p" style="font-size:.92rem;max-width:60ch;">De marcas queridas de Goiânia como a <strong style="color:var(--pink)">Boutique Cosmake</strong> e a <strong style="color:var(--pink)">Oh Boy!</strong> (Goiânia Shopping) a novas parcerias que topam colaborar. Só entro em projetos que fazem sentido pra mim e pra comunidade que estou construindo.</p>
-        <div class="brands-row">
-          <figure class="logo-item logo-pin"><span class="logo-badge open" aria-hidden="true">sua<br/>marca<br/>aqui</span><figcaption class="logo-name pin-cta">vamos conversar</figcaption></figure>
-        <div class="logo-marquee" id="logoMarquee" tabindex="0" role="region" aria-label="Logos das marcas parceiras">
-          <div class="logo-track" id="logoTrack">
-          <figure class="logo-item"><span class="logo-badge mono" aria-hidden="true">PM</span><figcaption class="logo-name">picminephoto</figcaption></figure>
-          <figure class="logo-item"><span class="logo-badge mono" aria-hidden="true">OB</span><figcaption class="logo-name">Oh Boy! · Goiânia Shopping</figcaption></figure>
-          <figure class="logo-item"><span class="logo-badge mono" aria-hidden="true">BC</span><figcaption class="logo-name">Boutique Cosmake</figcaption></figure>
-          <figure class="logo-item"><span class="logo-badge mono" aria-hidden="true">DR</span><figcaption class="logo-name">Papelaria Doce Rabisco</figcaption></figure>
-          <figure class="logo-item"><span class="logo-badge mono" aria-hidden="true">GB</span><figcaption class="logo-name">Garden Boutique</figcaption></figure>
+        <div class="how reveal">
+          <div class="win">
+            <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">como eu
+                trabalho</span></div>
+            <div class="win-body">
+              <h3 class="ios-h">Do briefing à entrega</h3>
+              <p class="ios-sub">Não vendo seguidores. Vendo confiança.</p>
+              <ul class="ios-check">
+                <li><button type="button" class="ios-item" aria-pressed="false"><span class="tick"
+                      aria-hidden="true"></span><span class="txt"><b>Alinhamento</b>A gente define o objetivo e os
+                      limites da campanha. Quanto mais detalhe, mais o conteúdo sai com a cara da sua
+                      marca.</span></button></li>
+                <li><button type="button" class="ios-item" aria-pressed="false"><span class="tick"
+                      aria-hidden="true"></span><span class="txt"><b>Criação</b>Prazo ideal de 7 dias pra gravar e
+                      editar com calma, e sempre que dá eu testo o produto antes. O prazo pode ser ajustado conforme o
+                      contrato, é só a gente conversar.</span></button></li>
+                <li><button type="button" class="ios-item" aria-pressed="false"><span class="tick"
+                      aria-hidden="true"></span><span class="txt"><b>Entrega</b>Material cru ou já editado com legendas,
+                      como você preferir. Se quiser, mando o print dos Insights depois.</span></button></li>
+              </ul>
+            </div>
           </div>
         </div>
-          <div class="logo-nav">
-            <button type="button" class="logo-arrow" id="logoPrev" aria-label="Ver marcas anteriores">‹</button>
-            <button type="button" class="logo-arrow" id="logoNext" aria-label="Ver próximas marcas">›</button>
+      </div>
+    </section>
+
+    <!-- MARCAS -->
+    <section class="scene" id="marcas">
+      <span class="scene-tag reveal"><b>06</b> · Marcas</span>
+      <div class="win reveal" style="margin-top:1.1rem;">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">marcas que já
+            confiaram</span></div>
+        <div class="win-body">
+          <p class="about-p" style="font-size:.92rem;max-width:60ch;">De marcas queridas de Goiânia como <strong
+              style="color:var(--pink)">Oh Boy!</strong> (Goiânia Shopping) e <strong style="color:var(--pink)">Melomake</strong>
+            a novas parcerias que topam colaborar. Só entro em projetos que fazem sentido pra mim e
+            pra comunidade que estou construindo.</p>
+          <div class="brands-row">
+            <figure class="logo-item logo-pin"><span class="logo-badge open"
+                aria-hidden="true">sua<br />marca<br />aqui</span>
+              <figcaption class="logo-name pin-cta">vamos conversar</figcaption>
+            </figure>
+            <div class="logo-marquee" id="logoMarquee" tabindex="0" role="region"
+              aria-label="Logos das marcas parceiras">
+              <div class="logo-track" id="logoTrack">
+                <figure class="logo-item"><span class="logo-badge bleed"><img src="images/lojas/picsmine.jpeg" width="200"
+                      height="200" loading="lazy" decoding="async" alt="Logo picminephoto" /></span>
+                  <figcaption class="logo-name">picminephoto</figcaption>
+                </figure>
+                <figure class="logo-item"><span class="logo-badge bleed"><img src="images/lojas/oh-boy.jpeg" width="200"
+                      height="200" loading="lazy" decoding="async" alt="Logo Oh Boy!" /></span>
+                  <figcaption class="logo-name">Oh Boy! · Goiânia Shopping</figcaption>
+                </figure>
+                <figure class="logo-item"><span class="logo-badge bleed"><img src="images/lojas/boutique.jpeg" width="200"
+                      height="200" loading="lazy" decoding="async" alt="Logo Boutique Cosmake" /></span>
+                  <figcaption class="logo-name">Boutique</figcaption>
+                </figure>
+                <figure class="logo-item"><span class="logo-badge" style="background:#f4ece3;"><img src="images/lojas/doce-rabisco-papelaria.jpeg"
+                      width="200" height="200" loading="lazy" decoding="async"
+                      alt="Logo Papelaria Doce Rabisco" /></span>
+                  <figcaption class="logo-name">Papelaria Doce Rabisco</figcaption>
+                </figure>
+                <figure class="logo-item"><span class="logo-badge"><img
+                      src="images/lojas/garden-boutique-principal.jpeg" width="200" height="200" loading="lazy"
+                      decoding="async" alt="Logo Garden Boutique" /></span>
+                  <figcaption class="logo-name">Garden Boutique</figcaption>
+                </figure>
+                <figure class="logo-item"><span class="logo-badge bleed"><img src="images/lojas/melomake.jpeg" width="200"
+                      height="200" loading="lazy" decoding="async" alt="Logo Melomake" /></span>
+                  <figcaption class="logo-name">Melomake</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="logo-nav">
+              <button type="button" class="logo-arrow" id="logoPrev" aria-label="Ver marcas anteriores">‹</button>
+              <button type="button" class="logo-arrow" id="logoNext" aria-label="Ver próximas marcas">›</button>
+            </div>
+          </div>
+          <p class="logo-hint"><span class="hint-mob">↔ Arraste para o lado para ver todas as marcas</span><span
+              class="hint-desk">↔ Arraste para o lado ou use as setas para ver todas as marcas</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODELO COMERCIAL -->
+    <section class="scene" id="modelo">
+      <span class="scene-tag reveal"><b>07</b> · Modelo Comercial</span>
+      <div class="win reveal" style="margin-top:1.1rem;">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">além de criadora,
+            também modelo</span></div>
+        <div class="win-body">
+          <p class="about-p">Além de criadora de conteúdo, também atuo como <strong style="color:var(--pink)">modelo
+              comercial</strong> — emprestando imagem, comunicação e personalidade pra valorizar produtos em fotos,
+            Reels, catálogos e campanhas de moda, beleza e outros segmentos.</p>
+          <div class="tag-row">
+            <span class="tag">Fotos p/ catálogo</span>
+            <span class="tag">Fotos p/ redes sociais</span>
+            <span class="tag">Provadores</span>
+            <span class="tag">Vídeos &amp; Reels</span>
+            <span class="tag">Publicidade</span>
+            <span class="tag">Moda &amp; Beleza</span>
           </div>
         </div>
-        <p class="logo-hint"><span class="hint-mob">↔ Arraste para o lado para ver todas as marcas</span><span class="hint-desk">↔ Arraste para o lado ou use as setas para ver todas as marcas</span></p>
       </div>
-    </div>
-  </section>
 
-  <!-- CONTATO -->
-  <section class="scene" id="contato">
-    <span class="scene-tag reveal"><b>07</b> · Contato</span>
-    <div class="contact-grid">
-      <div class="reveal">
-        <h2 class="contact-cta">Vamos conversar sobre a sua próxima campanha.</h2>
-        <p class="contact-sub">Me manda sua ideia e a gente pensa junto no melhor jeito de mostrar a sua marca — não precisa chegar com tudo pronto, só com vontade de criar algo bom.</p>
-        <a class="contact-email" href="mailto:contato@abiacampos.com" aria-label="Enviar e-mail para Abia">contato@abiacampos.com</a>
-        <p class="contact-reply">Respondo em breve.</p>
+      <div class="win reveal" style="margin-top:1.1rem;">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">valores
+            avulsos</span></div>
+        <div class="win-body">
+          <div class="stat-grid cols-2">
+            <div class="stat">
+              <div class="num">R$ 6</div>
+              <div class="unit">Foto comercial</div>
+              <div class="ctx">1 foto produzida pra catálogo, perfil da loja ou divulgação</div>
+            </div>
+            <div class="stat">
+              <div class="num">R$ 5</div>
+              <div class="unit">Story no meu perfil</div>
+              <div class="ctx">1 story apresentando o produto ou a marca</div>
+            </div>
+            <div class="stat">
+              <div class="num">R$ 10</div>
+              <div class="unit">Reels comercial</div>
+              <div class="ctx">1 vídeo curto e dinâmico, já editado</div>
+            </div>
+            <div class="stat key">
+              <div class="num">R$ 15</div>
+              <div class="unit">Foto + Reels</div>
+              <div class="ctx">1 foto comercial + 1 Reels</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- TODO: atualizar com os links reais das redes sociais da Abia -->
-      <div class="socials reveal">
-        <a class="soc" href="https://www.instagram.com/abiacamps/" target="_blank" rel="noopener"><span class="net">Instagram</span><span class="hd">@abiacamps</span></a>
-        <a class="soc" href="https://www.tiktok.com/@itsdailybia" target="_blank" rel="noopener"><span class="net">TikTok</span><span class="hd">@itsdailybia</span></a>
-        <a class="soc" href="#" rel="noopener"><span class="net">YouTube</span><span class="hd">@abiacampos</span></a>
-        <a class="soc" href="#" rel="noopener"><span class="net">Pinterest</span><span class="hd">@abiacampos</span></a>
+
+      <h3 class="fred reveal" style="font-size:1.1rem;font-style:italic;color:var(--ink-soft);margin:2.8rem 0 1.2rem;">
+        Pacotes</h3>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="sn">R$ 25</div>
+          <h3>Essencial</h3>
+          <p>3 fotos comerciais, 1 Reels e 1 Story. Ideal pra uma divulgação pontual — avulso sairia R$ 33.</p>
+        </div>
+        <div class="step">
+          <div class="sn">R$ 40</div>
+          <h3>Vitrine</h3>
+          <p>5 fotos comerciais, 2 Reels e 2 Stories. Pra apresentar melhor os produtos — avulso sairia R$ 52.</p>
+        </div>
+        <div class="step">
+          <div class="sn">R$ 60</div>
+          <h3>Campanha</h3>
+          <p>8 fotos comerciais, 3 Reels e 3 Stories. Pra lançamentos e coleções — avulso sairia R$ 82.</p>
+        </div>
       </div>
-    </div>
-  </section>
 
-</main>
+      <div class="note" style="margin-top:1.8rem;">Tenho facilidade diante das câmeras e já atuei como
+        garota-propaganda em campanhas na SBT, na Record e em ações do Governo (saúde e educação) — trago essa
+        vivência pra valorizar sua marca com naturalidade.</div>
+      <a class="whatsapp-btn" style="margin-top:1.4rem;"
+        href="https://wa.me/5562999254234?text=Oi%2C%20Abia!%20Vamos%20conversar%3F%20Quero%20te%20apresentar%20minha%20ideia%20pra%20gente%20construir%20o%20or%C3%A7amento%20juntas!%20%F0%9F%92%96"
+        target="_blank" rel="noopener" aria-label="Chamar Abia no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.78-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.72.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z" />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.08L2 22l5.08-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18.02a8.02 8.02 0 0 1-4.08-1.11l-.29-.18-3.02.8.81-2.95-.19-.3A8.01 8.01 0 1 1 20.01 12 8.02 8.02 0 0 1 12 20.02Z" />
+        </svg>
+        Chamar no WhatsApp
+      </a>
+    </section>
 
-<footer>Abia Campos · Mídia Kit 2026</footer>
+    <!-- CONTATO -->
+    <section class="scene" id="contato">
+      <span class="scene-tag reveal"><b>08</b> · Contato</span>
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 class="contact-cta">Vamos conversar sobre a sua próxima campanha.</h2>
+          <p class="contact-sub">Me manda sua ideia e a gente pensa junto no melhor jeito de mostrar a sua marca — não
+            precisa chegar com tudo pronto, só com vontade de criar algo bom.</p>
+          <a class="whatsapp-btn"
+            href="https://wa.me/5562999254234?text=Oi%2C%20Abia!%20Vamos%20conversar%3F%20Quero%20te%20apresentar%20minha%20ideia%20pra%20gente%20construir%20o%20or%C3%A7amento%20juntas!%20%F0%9F%92%96"
+            target="_blank" rel="noopener" aria-label="Chamar Abia no WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.78-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.72.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z" />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.08L2 22l5.08-1.35A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm0 18.02a8.02 8.02 0 0 1-4.08-1.11l-.29-.18-3.02.8.81-2.95-.19-.3A8.01 8.01 0 1 1 20.01 12 8.02 8.02 0 0 1 12 20.02Z" />
+            </svg>
+            Chamar no WhatsApp
+          </a>
+          <p class="contact-price">Confira os <a href="#modelo" style="color:var(--ink);text-decoration:underline;">valores e pacotes</a> acima.</p>
+          <a class="contact-email" href="mailto:contato@abiacampos.com"
+            aria-label="Enviar e-mail para Abia">contato@abiacampos.com</a>
+          <p class="contact-reply">Respondo em breve.</p>
+        </div>
+        <!-- TODO: atualizar com os links reais das redes sociais da Abia -->
+        <div class="socials reveal">
+          <a class="soc" href="https://www.instagram.com/abiacamps/" target="_blank" rel="noopener"><span
+              class="net">Instagram</span><span class="hd">@abiacamps</span></a>
+          <a class="soc" href="https://www.tiktok.com/@itsdailybia" target="_blank" rel="noopener"><span
+              class="net">TikTok</span><span class="hd">@itsdailybia</span></a>
+          <a class="soc" href="https://www.youtube.com/@abiacamposs" target="_blank" rel="noopener"><span class="net">YouTube</span><span class="hd">@abiacamposs</span></a>
+          <a class="soc" href="#" rel="noopener"><span class="net">Pinterest</span><span
+              class="hd">@abiacampos</span></a>
+        </div>
+      </div>
+    </section>
 
-<script>
-(function(){
-  function tick(){var d=new Date();var h=String(d.getHours()).padStart(2,'0');var m=String(d.getMinutes()).padStart(2,'0');var c=document.getElementById('clock');if(c)c.textContent=h+':'+m;}
-  tick();setInterval(tick,15000);
-  // ---- Checklist estilo Notas do iOS (marcar/desmarcar as etapas) ----
-  document.querySelectorAll('.ios-item').forEach(function(b){
-    b.addEventListener('click',function(){
-      b.setAttribute('aria-pressed', b.getAttribute('aria-pressed')==='true' ? 'false' : 'true');
-    });
-  });
+  </main>
 
-  // ---- Menu cascata (mobile) ----
-  var mTog=document.getElementById('menuToggle'), mNav=document.getElementById('menuNav');
-  if(mTog&&mNav){
-    mTog.addEventListener('click',function(){
-      var open=mNav.classList.toggle('open'); mTog.classList.toggle('open',open);
-      mTog.setAttribute('aria-expanded',open?'true':'false');
-    });
-    mNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){
-      mNav.classList.remove('open'); mTog.classList.remove('open'); mTog.setAttribute('aria-expanded','false'); }); });
-  }
-  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+  <footer>Abia Campos · Mídia Kit 2026</footer>
 
-  // ---- Barra de progresso de leitura + header com sombra ao rolar ----
-  var progressBar=document.getElementById('progressBar');
-  var menubarEl=document.getElementById('menubar');
-  function onScroll(){
-    var doc=document.documentElement;
-    var scrollTop=window.pageYOffset||doc.scrollTop;
-    var height=(doc.scrollHeight-doc.clientHeight)||1;
-    if(progressBar) progressBar.style.width=Math.min(100,(scrollTop/height)*100)+'%';
-    if(menubarEl) menubarEl.classList.toggle('scrolled', scrollTop>8);
-  }
-  onScroll();
-  window.addEventListener('scroll',onScroll,{passive:true});
+  <script src="script.js"></script>
 
-  // ---- Destaca o link do menu conforme a secao visivel ----
-  var navLinks=[].slice.call(document.querySelectorAll('.menu-nav a[href^="#"]'));
-  var navSections=navLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
-  if(navSections.length){
-    var navObs=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(e.isIntersecting){
-          var id='#'+e.target.id;
-          navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')===id); });
-        }
-      });
-    },{rootMargin:'-45% 0px -50% 0px'});
-    navSections.forEach(function(s){ navObs.observe(s); });
-  }
-
-  // ---- Anima os numeros das metricas ao entrar na tela ----
-  function animateCount(el){
-    var raw=el.textContent.trim();
-    var m=raw.match(/^([^\d]*)(\d+(?:[.,]\d+)?)([^\d]*)$/);
-    if(!m) return;
-    var prefix=m[1], numStr=m[2], suffix=m[3];
-    var decimals=numStr.indexOf(',')>-1 ? numStr.split(',')[1].length : 0;
-    var target=parseFloat(numStr.replace('.','').replace(',','.'));
-    if(isNaN(target)) return;
-    var start=performance.now(), dur=1100;
-    function frame(now){
-      var t=Math.min(1,(now-start)/dur);
-      var eased=1-Math.pow(1-t,3);
-      var val=target*eased;
-      var out=decimals>0 ? val.toFixed(decimals).replace('.',',') : Math.round(val).toLocaleString('pt-BR');
-      el.textContent=prefix+out+suffix;
-      if(t<1) requestAnimationFrame(frame);
-      else el.textContent=raw;
-    }
-    requestAnimationFrame(frame);
-  }
-  var countEls=[].slice.call(document.querySelectorAll('.mtile .n, .stat .num'));
-  var countObs=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){ animateCount(e.target); countObs.unobserve(e.target); }
-    });
-  },{threshold:0.5});
-  countEls.forEach(function(el){ countObs.observe(el); });
-})();
-</script>
-<style>
-.langsw{display:inline-flex;align-items:center;gap:2px;padding:3px;border-radius:999px;
-  background:transparent;border:1px solid var(--line);flex:0 0 auto;}
-.langsw button{font-family:'Inter',system-ui,sans-serif;font-size:.66rem;font-weight:700;
-  letter-spacing:.04em;color:var(--ink-soft);background:transparent;border:0;cursor:pointer;
-  padding:.28rem .5rem;border-radius:999px;line-height:1;transition:.18s ease;}
-.langsw button:hover{color:var(--ink);}
-.langsw button.on{background:var(--pink);color:#fff;}
-@media(max-width:640px){
-  .langsw{padding:2px;}
-  .langsw button{font-size:.6rem;padding:.24rem .4rem;}
-}
-</style>
-<script>
-(function(){
-  var DICT={
-    en:{
-      "Influenciadora & UGC Creator":"Influencer & UGC Creator",
-      "Sobre":"About","Métricas":"Metrics","Nichos":"Niches","Portfólio":"Portfolio",
-      "Entrego":"Deliverables","Processo":"Process","Marcas":"Brands","Contato":"Contact",
-      "📌 Mídia Kit · Agosto 2026":"📌 Media Kit · August 2026",
-      "34 mil":"34k","contas alcançadas":"accounts reached","engajamento":"engagement",
-      "público em SC":"audience in Santa Catarina",
-      "Sua marca recomendada por uma":"Your brand recommended by a","voz":"voice",
-      "que a audiência realmente ouve e responde 💗":"that the audience truly listens to and answers 💗",
-      "· Sobre":"· About","conheça a Jheni":"meet Jheni","sobre_a_jheni.txt":"about_jheni.txt",
-      "Pode me chamar de Jheni.":"You can call me Jheni.",
-      "Tenho 27 anos, sou de São José (a famosa Grande Floripa, em Santa Catarina). Sou influenciadora e trabalho também com UGC, apaixonada por uma lente de câmera e com um talento especial pra achar graça e beleza nas coisas simples da rotina.":"I'm 27, from São José, in Santa Catarina, Brazil. I'm an influencer and I also work with UGC, in love with a camera lens and with a real talent for finding charm and beauty in the simplest parts of everyday life.",
-      "Hoje meus nichos conversam com quem eu sou: skincare, maquiagem e o mundo da beleza sempre estiveram presentes no meu dia a dia, e sempre estive em busca de entender mais sobre o assunto.":"Today my niches match who I am: skincare, makeup and the beauty world have always been part of my everyday life, and I have always wanted to understand more about it.",
-      "Além de criadora de conteúdo, tenho a rotina de uma CLT, o que conversa muito com a minha comunidade, que gosta de acompanhar como encaixar certas coisas na rotina corrida, sabe?! Aí entra o lifestyle, que gera uma identificação enorme com quem me acompanha.":"Besides being a content creator, I have a full time job, and that resonates a lot with my community, who like following how to fit things into a busy routine. That is where lifestyle comes in, and it creates a huge sense of identification with the people who follow me.",
-      "Faço porque amo criar e me comunicar, e hoje conquistei uma comunidade incrível.":"I do it because I love creating and communicating, and today I have built an incredible community.",
-      "· Métricas":"· Metrics","📊 Analytics · Instagram · julho 2026":"📊 Analytics · Instagram · July 2026",
-      "Contas alcançadas":"Accounts reached",
-      "Alcance orgânico, sem investimento em anúncio":"Organic reach, with zero ad spend",
-      "Visualizações":"Views",
-      "Conteúdo visto cerca de 52x a base de seguidores de julho":"Content seen about 52x the July follower base",
-      "Interações":"Interactions",
-      "Pessoas que pararam, reagiram e responderam":"People who stopped, reacted and replied",
-      "Taxa de engajamento":"Engagement rate",
-      "Público de verdade que curte, comenta e salva":"A real audience that likes, comments and saves",
-      "Audiência local":"Local audience",
-      "Quase dois terços do público vive na Grande Floripa":"Almost two thirds of the audience lives in Greater Florianópolis",
-      "Seguidores":"Followers",
-      "Eram 1.284 em julho. Crescimento 100% orgânico":"1,284 in July. 100% organic growth",
-      "Gênero · seguidores":"Gender · followers","Mulheres":"Women","Homens":"Men",
-      "Faixa etária":"Age range","Outras":"Other","Principais cidades":"Top cities",
-      "⌖ Grande Florianópolis somada:":"⌖ Greater Florianópolis combined:",
-      "· Dados do Instagram Insights, julho/2026. Nada estimado, nada inflado.":"· Data from Instagram Insights, July 2026. Nothing estimated, nothing inflated.",
-      "Não é sobre quantos me seguem. É sobre quantos param, confiam e vão atrás 🌟":"It's not about how many follow me. It's about how many stop, trust and go after it 🌟",
-      "· Por que Nano":"· Why Nano","por_que_nano.txt":"why_nano.txt",
-      "1.321 seguidores que":"1,321 followers who","confiam":"trust",
-      "valem mais do que 50 mil que ignoram":"are worth more than 50,000 who scroll past",
-      "No universo da influência digital, tamanho não é o único critério que importa. Estudos de plataformas como Later, Hootsuite e Nielsen mostram que contas com menos de 10 mil seguidores costumam gerar taxas de engajamento":"In digital influence, size is not the only criterion that matters. Studies from platforms such as Later, Hootsuite and Nielsen show that accounts under 10,000 followers tend to generate engagement rates",
-      "consideravelmente mais altas":"considerably higher",
-      "do que perfis maiores, porque a relação com a audiência é mais próxima e pessoal.":"than larger profiles, because the relationship with the audience is closer and more personal.",
-      "Minha audiência é local, feminina, adulta e principalmente":"My audience is local, female, adult and above all",
-      "ativa":"active",
-      ". Conheço as seguidoras pelo nome, respondo cada mensagem e sei o que a comunidade quer ouvir. Isso cria um nível de confiança que nenhuma campanha paga consegue comprar.":". I know my followers by name, I answer every message and I know what the community wants to hear. That builds a level of trust no paid campaign can buy.",
-      "* Dados baseados em relatórios de benchmarking de influência digital (2023 a 2024).":"* Based on digital influence benchmarking reports (2023 to 2024).",
-      "🎯 Alcance preciso":"🎯 Precise reach",
-      "Público concentrado na Grande Floripa. Ideal pra marcas da região e pra quem é de fora e quer entrar no mercado de SC.":"Audience concentrated in Greater Florianópolis. Ideal for regional brands and for outside brands looking to enter the Santa Catarina market.",
-      "💬 Conversa real":"💬 Real conversation",
-      "Eu recomendo e a audiência responde de verdade. Sua marca entra nesse diálogo.":"I recommend and the audience genuinely responds. Your brand joins that conversation.",
-      "🌱 Audiência real":"🌱 Real audience",
-      "100% orgânica, construída sem impulsionamento pago.":"100% organic, built with no paid boosting.",
-      "🛍️ Público comprador":"🛍️ Buying audience",
-      "Mulheres de 25 a 44 anos, faixa com renda e decisão de compra.":"Women aged 25 to 44, the bracket with income and purchasing power.",
-      "· Nichos":"· Niches","o que você vai encontrar":"what you will find here",
-      "Cuidados com a pele e opiniões sinceras":"Skin care and honest opinions",
-      "Maquiagem":"Makeup","Tutoriais, reviews e makes criativas":"Tutorials, reviews and creative looks",
-      "Rotina de cuidado e resultado real no cabelo":"Care routine and real results on hair",
-      "Treinos reais e os perrengues sem filtro":"Real workouts and the struggles, unfiltered",
-      "Reviews & Testes":"Reviews & Testing",
-      "Opiniões honestas sobre o que entrega":"Honest opinions on what actually delivers",
-      "Conteúdo sem cara de anúncio":"Content that doesn't look like an ad",
-      "Também aparece no perfil":"Also on the profile","Casa Nova":"New Home","Humor":"Comedy",
-      "Turismo":"Travel","Gastronomia":"Food",
-      "· Portfólio":"· Portfolio","Conteúdos que":"Content that","conectam":"connects",
-      "Recentes":"Recent","Tópicos":"Topics",
-      "* Alguns conteúdos foram criados de forma independente, sem parceria comercial.":"* Some content was created independently, with no commercial partnership.",
-      "· O que entrego":"· What I deliver","o que sua marca recebe":"what your brand receives",
-      "Stories com engajamento":"Stories that get engagement",
-      "Sua marca entra numa conversa que já está acontecendo, do jeito mais natural possível.":"Your brand joins a conversation that is already happening, in the most natural way possible.",
-      "Reels autênticos":"Authentic Reels",
-      "Cerca de 76% das visualizações do perfil. Conteúdo que a audiência assiste até o fim porque parece com a vida dela.":"About 76% of the profile views. Content the audience watches to the end because it looks like their own life.",
-      "Feed com texto que conecta":"Feed posts with copy that connects",
-      "Carrosséis e fotos com escrita que convence. Eu também escrevo, não só gravo.":"Carousels and photos with copy that convinces. I write too, not only film.",
-      "Review honesto":"Honest review",
-      "Produto em uso na minha rotina, com opinião real no meu estilo. O tipo que a audiência leva a sério.":"The product in use inside my routine, with a real opinion in my own style. The kind the audience takes seriously.",
-      "UGC pra sua marca usar":"UGC for your brand to use",
-      "Conteúdo sob medida (com ou sem rosto), entregue pronto pros seus canais e mídia paga. Direitos conforme contrato.":"Custom content (with or without my face), delivered ready for your channels and paid media. Usage rights per contract.",
-      "O que sua marca ganha":"What your brand gains",
-      "Não vendo seguidores. Vendo confiança.":"I don't sell followers. I sell trust.",
-      "Influência regional forte em SC":"Strong regional influence in Santa Catarina",
-      "São José, Palhoça e Floripa concentram meu público. E se sua marca não é daqui, eu sou a porta de entrada pro mercado de SC.":"São José, Palhoça and Florianópolis concentrate my audience. And if your brand is not from here, I am the entry point into the Santa Catarina market.",
-      "Sua marca vira conversa, não anúncio":"Your brand becomes a conversation, not an ad",
-      "Quando compartilho algo que gostei, a pergunta seguinte já chega: \"onde compra?\". Sua marca é comentada, perguntada e recomendada.":"When I share something I liked, the next question arrives right away: \"where do I buy it?\". Your brand gets talked about, asked about and recommended.",
-      "Sua marca descoberta por gente nova":"Your brand discovered by new people",
-      "Cerca de 66% das visualizações vêm de quem ainda não me segue. Sua marca não fica só na bolha, alcança público novo toda semana.":"About 66% of views come from people who don't follow me yet. Your brand does not stay inside the bubble, it reaches new people every week.",
-      "Audiência 100% orgânica":"100% organic audience",
-      "Sem bots e sem turbinada paga. Cada interação é de gente de verdade.":"No bots and no paid boosting. Every interaction comes from a real person.",
-      "· Processo":"· Process","Como eu":"How I","trabalho":"work","Alinhamento":"Alignment",
-      "Aqui a gente entende o seu objetivo e os seus limites, o que pode e o que não pode. Quanto mais detalhes você me passar, mais o conteúdo sai dentro do que a sua marca busca.":"This is where we map your goal and your limits, what is allowed and what is not. The more detail you give me, the closer the content lands to what your brand is looking for.",
-      "Criação":"Creation",
-      "Trabalho com prazo mínimo de 7 dias para criar, executar e editar com calma. Sempre que dá, testo o produto antes de gravar, fica mais fluido e honesto. Se o prazo for apertado, a gente se adapta sem problema.":"I work with a minimum 7 day lead time to create, shoot and edit without rushing. Whenever possible I test the product before filming, which makes everything more natural and honest. If the deadline is tight, we adapt without a problem.",
-      "Entrega":"Delivery",
-      "A parte mais importante. Entrego o material cru ou já com legendas e edição, do jeito que você preferir. Se a marca quiser, ainda envio o print dos Insights com o desempenho da publicação.":"The most important part. I deliver raw footage or fully edited with captions, whichever you prefer. If the brand wants it, I also send the Insights screenshot with the post performance.",
-      "Sua marca entra numa conversa que já está acontecendo.":"Your brand joins a conversation that is already happening.",
-      "Cerca de 76% das visualizações do perfil. A audiência assiste até o fim.":"About 76% of the profile views. The audience watches to the end.",
-      "Produto em uso na minha rotina, com opinião real no meu estilo.":"The product in use inside my routine, with a real opinion in my own style.",
-      "Conteúdo sob medida, pronto pros seus canais e mídia paga. Direitos conforme contrato.":"Custom content, ready for your channels and paid media. Usage rights per contract.",
-      "A gente define o objetivo e os limites da campanha. Quanto mais detalhe, mais o conteúdo sai com a cara da sua marca.":"We map the goal and the limits of the campaign. The more detail you give me, the closer the content lands to your brand.",
-      "Prazo ideal de 7 dias pra gravar e editar com calma, e sempre que dá eu testo o produto antes. O prazo pode ser ajustado conforme o contrato, é só a gente conversar.":"Ideal lead time of 7 days to shoot and edit without rushing, and whenever possible I test the product first. The timeline can be adjusted according to the contract, let's talk about it.",
-      "Material cru ou já editado com legendas, como você preferir. Se quiser, mando o print dos Insights depois.":"Raw footage or fully edited with captions, whichever you prefer. If you want, I send the Insights screenshot afterwards.",
-      "Como eu":"How I",
-      "como eu trabalho":"how I work",
-      "Do briefing à entrega":"From briefing to delivery",
-      "· Marcas":"· Brands","marcas que já confiaram":"brands that have trusted me",
-      "De grandes nomes como":"From big names like","e":"and",
-      "a negócios locais queridos. Só entro em projetos que fazem sentido pra mim e pra comunidade que construí. É essa curadoria que mantém minha audiência acreditando no que eu compartilho.":"to beloved local businesses. I only take on projects that make sense for me and for the community I built. That curation is what keeps my audience believing in what I share.",
-      "BigBoom Suplementos":"BigBoom Supplements",
-      "Arlete Vieira Doceria":"Arlete Vieira Bakery",
-      "Sua marca aqui ✨":"Your brand here ✨",
-      "sua":"your","marca":"brand","aqui":"here",
-      "vamos conversar 🌟":"let's talk 🌟","embaixadora oficial":"official ambassador",
-      "Léu Cakes":"Léu Cakes","Jusst Lingerie":"Jusst Lingerie",
-      "↔ Arraste para o lado ou use as setas para ver todas as marcas":"↔ Swipe sideways or use the arrows to see every brand",
-      "↔ Arraste para o lado para ver todas as marcas":"↔ Swipe sideways to see every brand",
-      "· Contato":"· Contact","Manda uma":"Send a","mensagem":"message",
-      "Mensagens · Jheni":"Messages · Jheni",
-      "Oi! Tenho uma ideia de campanha pra minha marca 👀":"Hi! I have a campaign idea for my brand 👀",
-      "Adorei! Não precisa chegar com tudo pronto, só com vontade de criar algo bom.":"Love it! You don't need to arrive with everything figured out, just with the will to create something good.",
-      "Me manda sua ideia e a gente pensa junto no melhor jeito de mostrar a sua marca 💗":"Send me your idea and we will figure out together the best way to show your brand 💗",
-      "Manda para":"Send it to",", respondo em 48h 🌟":", I reply within 48h 🌟",
-      "enviar seu e-mail...":"send your email...",
-      "Abia Campos · Mídia Kit 2026 · 🌟":"Abia Campos · Media Kit 2026 · 🌟",
-      "33.828":"33,828","66.859":"66,859","4.912":"4,912","1.321":"1,321",
-      "14,5%":"14.5%","62,1%":"62.1%","71,6%":"71.6%","28,4%":"28.4%","53,8%":"53.8%",
-      "24,9%":"24.9%","9,2%":"9.2%","6,4%":"6.4%","5,6%":"5.6%","39,4%":"39.4%",
-      "10,5%":"10.5%","9,4%":"9.4%","3,3%":"3.3%","2,8%":"2.8%"
-    },
-    es:{
-      "Influenciadora & UGC Creator":"Influencer & UGC Creator",
-      "Portfólio":"Portafolio","Processo":"Proceso","Contato":"Contacto",
-      "engajamento":"engagement","Entrego":"Entregables","Humor":"Humor","Turismo":"Turismo",
-      "voz":"voz","confiam":"confían","trabalho":"trabajo",
-      "📌 Mídia Kit · Agosto 2026":"📌 Media Kit · Agosto 2026",
-      "contas alcançadas":"cuentas alcanzadas","público em SC":"público en Santa Catarina",
-      "Sua marca recomendada por uma":"Tu marca recomendada por una",
-      "que a audiência realmente ouve e responde 💗":"que la audiencia realmente escucha y responde 💗",
-      "conheça a Jheni":"conoce a Jheni","sobre_a_jheni.txt":"sobre_jheni.txt",
-      "Pode me chamar de Jheni.":"Pueden llamarme Jheni.",
-      "Tenho 27 anos, sou de São José (a famosa Grande Floripa, em Santa Catarina). Sou influenciadora e trabalho também com UGC, apaixonada por uma lente de câmera e com um talento especial pra achar graça e beleza nas coisas simples da rotina.":"Tengo 27 años, soy de São José, en Santa Catarina, Brasil. Soy influencer y también trabajo con UGC, enamorada de una lente de cámara y con un talento especial para encontrarle gracia y belleza a las cosas simples de la rutina.",
-      "Hoje meus nichos conversam com quem eu sou: skincare, maquiagem e o mundo da beleza sempre estiveram presentes no meu dia a dia, e sempre estive em busca de entender mais sobre o assunto.":"Hoy mis nichos conversan con quien soy: el skincare, el maquillaje y el mundo de la belleza siempre estuvieron presentes en mi día a día, y siempre busqué entender más sobre el tema.",
-      "Além de criadora de conteúdo, tenho a rotina de uma CLT, o que conversa muito com a minha comunidade, que gosta de acompanhar como encaixar certas coisas na rotina corrida, sabe?! Aí entra o lifestyle, que gera uma identificação enorme com quem me acompanha.":"Además de creadora de contenido, tengo la rutina de un empleo fijo, y eso conecta mucho con mi comunidad, a la que le gusta seguir cómo encajar ciertas cosas en la rutina apretada. Ahí entra el lifestyle, que genera una identificación enorme con quien me acompaña.",
-      "Faço porque amo criar e me comunicar, e hoje conquistei uma comunidade incrível.":"Lo hago porque amo crear y comunicarme, y hoy conquisté una comunidad increíble.",
-      "📊 Analytics · Instagram · julho 2026":"📊 Analytics · Instagram · julio 2026",
-      "Contas alcançadas":"Cuentas alcanzadas",
-      "Alcance orgânico, sem investimento em anúncio":"Alcance orgánico, sin inversión en anuncios",
-      "Visualizações":"Visualizaciones",
-      "Conteúdo visto cerca de 52x a base de seguidores de julho":"Contenido visto cerca de 52x la base de seguidores de julio",
-      "Interações":"Interacciones",
-      "Pessoas que pararam, reagiram e responderam":"Personas que se detuvieron, reaccionaron y respondieron",
-      "Taxa de engajamento":"Tasa de engagement",
-      "Público de verdade que curte, comenta e salva":"Público de verdad que da like, comenta y guarda",
-      "Audiência local":"Audiencia local",
-      "Quase dois terços do público vive na Grande Floripa":"Casi dos tercios del público vive en la Gran Florianópolis",
-      "Eram 1.284 em julho. Crescimento 100% orgânico":"Eran 1.284 en julio. Crecimiento 100% orgánico",
-      "Gênero · seguidores":"Género · seguidores","Mulheres":"Mujeres","Homens":"Hombres",
-      "Faixa etária":"Rango de edad","Outras":"Otras","Principais cidades":"Principales ciudades",
-      "⌖ Grande Florianópolis somada:":"⌖ Gran Florianópolis sumada:",
-      "· Dados do Instagram Insights, julho/2026. Nada estimado, nada inflado.":"· Datos de Instagram Insights, julio/2026. Nada estimado, nada inflado.",
-      "Não é sobre quantos me seguem. É sobre quantos param, confiam e vão atrás 🌟":"No se trata de cuántos me siguen. Se trata de cuántos se detienen, confían y van a buscar 🌟",
-      "· Por que Nano":"· Por qué Nano","confiam":"confían",
-      "valem mais do que 50 mil que ignoram":"valen más que 50 mil que ignoran",
-      "No universo da influência digital, tamanho não é o único critério que importa. Estudos de plataformas como Later, Hootsuite e Nielsen mostram que contas com menos de 10 mil seguidores costumam gerar taxas de engajamento":"En el universo de la influencia digital, el tamaño no es el único criterio que importa. Estudios de plataformas como Later, Hootsuite y Nielsen muestran que las cuentas con menos de 10 mil seguidores suelen generar tasas de engagement",
-      "consideravelmente mais altas":"considerablemente más altas",
-      "do que perfis maiores, porque a relação com a audiência é mais próxima e pessoal.":"que los perfiles más grandes, porque la relación con la audiencia es más cercana y personal.",
-      "Minha audiência é local, feminina, adulta e principalmente":"Mi audiencia es local, femenina, adulta y sobre todo",
-      "ativa":"activa",
-      ". Conheço as seguidoras pelo nome, respondo cada mensagem e sei o que a comunidade quer ouvir. Isso cria um nível de confiança que nenhuma campanha paga consegue comprar.":". Conozco a mis seguidoras por su nombre, respondo cada mensaje y sé lo que la comunidad quiere escuchar. Eso crea un nivel de confianza que ninguna campaña pagada puede comprar.",
-      "* Dados baseados em relatórios de benchmarking de influência digital (2023 a 2024).":"* Datos basados en informes de benchmarking de influencia digital (2023 a 2024).",
-      "Público concentrado na Grande Floripa. Ideal pra marcas da região e pra quem é de fora e quer entrar no mercado de SC.":"Público concentrado en la Gran Florianópolis. Ideal para marcas de la región y para quien viene de fuera y quiere entrar al mercado de Santa Catarina.",
-      "💬 Conversa real":"💬 Conversación real",
-      "Eu recomendo e a audiência responde de verdade. Sua marca entra nesse diálogo.":"Yo recomiendo y la audiencia responde de verdad. Tu marca entra en ese diálogo.",
-      "🌱 Audiência real":"🌱 Audiencia real",
-      "100% orgânica, construída sem impulsionamento pago.":"100% orgánica, construida sin impulso pagado.",
-      "Mulheres de 25 a 44 anos, faixa com renda e decisão de compra.":"Mujeres de 25 a 44 años, el rango con ingresos y decisión de compra.",
-      "o que você vai encontrar":"lo que vas a encontrar",
-      "Cuidados com a pele e opiniões sinceras":"Cuidado de la piel y opiniones sinceras",
-      "Maquiagem":"Maquillaje",
-      "Tutoriais, reviews e makes criativas":"Tutoriales, reseñas y maquillajes creativos",
-      "Rotina de cuidado e resultado real no cabelo":"Rutina de cuidado y resultado real en el cabello",
-      "Treinos reais e os perrengues sem filtro":"Entrenamientos reales y los tropiezos sin filtro",
-      "Reviews & Testes":"Reseñas y Pruebas",
-      "Opiniões honestas sobre o que entrega":"Opiniones honestas sobre lo que realmente funciona",
-      "Conteúdo sem cara de anúncio":"Contenido que no parece anuncio",
-      "Também aparece no perfil":"También aparece en el perfil","Casa Nova":"Casa Nueva",
-      "Gastronomia":"Gastronomía",
-      "· Portfólio":"· Portafolio","Conteúdos que":"Contenidos que","conectam":"conectan",
-      "Recentes":"Recientes","Tópicos":"Temas",
-      "* Alguns conteúdos foram criados de forma independente, sem parceria comercial.":"* Algunos contenidos fueron creados de forma independiente, sin alianza comercial.",
-      "· O que entrego":"· Lo que entrego","o que sua marca recebe":"lo que tu marca recibe",
-      "Stories com engajamento":"Stories con engagement",
-      "Sua marca entra numa conversa que já está acontecendo, do jeito mais natural possível.":"Tu marca entra en una conversación que ya está ocurriendo, de la forma más natural posible.",
-      "Reels autênticos":"Reels auténticos",
-      "Cerca de 76% das visualizações do perfil. Conteúdo que a audiência assiste até o fim porque parece com a vida dela.":"Cerca del 76% de las visualizaciones del perfil. Contenido que la audiencia ve hasta el final porque se parece a su propia vida.",
-      "Feed com texto que conecta":"Feed con texto que conecta",
-      "Carrosséis e fotos com escrita que convence. Eu também escrevo, não só gravo.":"Carruseles y fotos con textos que convencen. Yo también escribo, no solo grabo.",
-      "Review honesto":"Reseña honesta",
-      "Produto em uso na minha rotina, com opinião real no meu estilo. O tipo que a audiência leva a sério.":"El producto en uso dentro de mi rutina, con opinión real y en mi estilo. Del tipo que la audiencia se toma en serio.",
-      "UGC pra sua marca usar":"UGC para que tu marca use",
-      "Conteúdo sob medida (com ou sem rosto), entregue pronto pros seus canais e mídia paga. Direitos conforme contrato.":"Contenido a medida (con o sin rostro), entregado listo para tus canales y medios pagados. Derechos según contrato.",
-      "O que sua marca ganha":"Lo que tu marca gana",
-      "Não vendo seguidores. Vendo confiança.":"No vendo seguidores. Vendo confianza.",
-      "Influência regional forte em SC":"Influencia regional fuerte en Santa Catarina",
-      "São José, Palhoça e Floripa concentram meu público. E se sua marca não é daqui, eu sou a porta de entrada pro mercado de SC.":"São José, Palhoça y Florianópolis concentran mi público. Y si tu marca no es de aquí, yo soy la puerta de entrada al mercado de Santa Catarina.",
-      "Sua marca vira conversa, não anúncio":"Tu marca se vuelve conversación, no anuncio",
-      "Quando compartilho algo que gostei, a pergunta seguinte já chega: \"onde compra?\". Sua marca é comentada, perguntada e recomendada.":"Cuando comparto algo que me gustó, la siguiente pregunta llega enseguida: \"¿dónde se compra?\". Tu marca es comentada, preguntada y recomendada.",
-      "Sua marca descoberta por gente nova":"Tu marca descubierta por gente nueva",
-      "Cerca de 66% das visualizações vêm de quem ainda não me segue. Sua marca não fica só na bolha, alcança público novo toda semana.":"Cerca del 66% de las visualizaciones vienen de quien todavía no me sigue. Tu marca no se queda en la burbuja, alcanza público nuevo cada semana.",
-      "Audiência 100% orgânica":"Audiencia 100% orgánica",
-      "Sem bots e sem turbinada paga. Cada interação é de gente de verdade.":"Sin bots y sin impulso pagado. Cada interacción es de gente real.",
-      "· Processo":"· Proceso","Como eu":"Cómo","trabalho":"trabajo","Alinhamento":"Alineación",
-      "Aqui a gente entende o seu objetivo e os seus limites, o que pode e o que não pode. Quanto mais detalhes você me passar, mais o conteúdo sai dentro do que a sua marca busca.":"Aquí entendemos tu objetivo y tus límites, lo que se puede y lo que no. Cuanto más detalle me des, más cerca queda el contenido de lo que tu marca busca.",
-      "Criação":"Creación",
-      "Trabalho com prazo mínimo de 7 dias para criar, executar e editar com calma. Sempre que dá, testo o produto antes de gravar, fica mais fluido e honesto. Se o prazo for apertado, a gente se adapta sem problema.":"Trabajo con un plazo mínimo de 7 días para crear, grabar y editar con calma. Siempre que puedo, pruebo el producto antes de grabar, así queda más fluido y honesto. Si el plazo es ajustado, nos adaptamos sin problema.",
-      "A parte mais importante. Entrego o material cru ou já com legendas e edição, do jeito que você preferir. Se a marca quiser, ainda envio o print dos Insights com o desempenho da publicação.":"La parte más importante. Entrego el material en bruto o ya con subtítulos y edición, como prefieras. Si la marca quiere, también envío la captura de Insights con el rendimiento de la publicación.",
-      "Sua marca entra numa conversa que já está acontecendo.":"Tu marca entra en una conversación que ya está ocurriendo.",
-      "Cerca de 76% das visualizações do perfil. A audiência assiste até o fim.":"Cerca del 76% de las visualizaciones del perfil. La audiencia ve hasta el final.",
-      "Produto em uso na minha rotina, com opinião real no meu estilo.":"El producto en uso dentro de mi rutina, con opinión real y en mi estilo.",
-      "Conteúdo sob medida, pronto pros seus canais e mídia paga. Direitos conforme contrato.":"Contenido a medida, listo para tus canales y medios pagados. Derechos según contrato.",
-      "A gente define o objetivo e os limites da campanha. Quanto mais detalhe, mais o conteúdo sai com a cara da sua marca.":"Definimos el objetivo y los límites de la campaña. Cuanto más detalle me des, más cerca queda el contenido de tu marca.",
-      "Prazo ideal de 7 dias pra gravar e editar com calma, e sempre que dá eu testo o produto antes. O prazo pode ser ajustado conforme o contrato, é só a gente conversar.":"Plazo ideal de 7 días para grabar y editar con calma, y siempre que puedo pruebo el producto antes. El plazo se puede ajustar según el contrato, solo hay que conversarlo.",
-      "Material cru ou já editado com legendas, como você preferir. Se quiser, mando o print dos Insights depois.":"Material en bruto o ya editado con subtítulos, como prefieras. Si quieres, envío después la captura de Insights.",
-      "Como eu":"Cómo",
-      "como eu trabalho":"cómo trabajo",
-      "Do briefing à entrega":"Del briefing a la entrega",
-      "marcas que já confiaram":"marcas que ya confiaron",
-      "De grandes nomes como":"De grandes nombres como","e":"y",
-      "a negócios locais queridos. Só entro em projetos que fazem sentido pra mim e pra comunidade que construí. É essa curadoria que mantém minha audiência acreditando no que eu compartilho.":"a negocios locales queridos. Solo entro en proyectos que tienen sentido para mí y para la comunidad que construí. Esa curaduría es la que mantiene a mi audiencia creyendo en lo que comparto.",
-      "Arlete Vieira Doceria":"Arlete Vieira Pastelería",
-      "Sua marca aqui ✨":"Tu marca aquí ✨",
-      "sua":"tu","marca":"marca","aqui":"aquí",
-      "vamos conversar 🌟":"hablemos 🌟","embaixadora oficial":"embajadora oficial",
-      "↔ Arraste para o lado ou use as setas para ver todas as marcas":"↔ Desliza al lado o usa las flechas para ver todas las marcas",
-      "↔ Arraste para o lado para ver todas as marcas":"↔ Desliza al lado para ver todas las marcas",
-      "· Contato":"· Contacto","Manda uma":"Manda un","mensagem":"mensaje",
-      "Mensagens · Jheni":"Mensajes · Jheni",
-      "Oi! Tenho uma ideia de campanha pra minha marca 👀":"¡Hola! Tengo una idea de campaña para mi marca 👀",
-      "Adorei! Não precisa chegar com tudo pronto, só com vontade de criar algo bom.":"¡Me encantó! No necesitas llegar con todo listo, solo con ganas de crear algo bueno.",
-      "Me manda sua ideia e a gente pensa junto no melhor jeito de mostrar a sua marca 💗":"Mándame tu idea y pensamos juntas la mejor forma de mostrar tu marca 💗",
-      "Manda para":"Manda a",", respondo em 48h 🌟":", respondo en 48h 🌟",
-      "enviar seu e-mail...":"enviar tu email...",
-      "Abia Campos · Mídia Kit 2026 · 🌟":"Abia Campos · Media Kit 2026 · 🌟"
-    }
-  };
-
-  var ATTR={
-    en:{
-      "Abia passando gloss":"Abia applying lip gloss",
-      "Abia sorrindo":"Abia smiling",
-      "Abia com o produto":"Abia holding the product",
-      "Apresentação de produtos":"Product presentation",
-      "Arrume-se comigo":"Get ready with me",
-      "Gastronomia":"Food",
-      "Make gravada no ônibus":"Makeup filmed on the bus",
-      "Retoque Mágico":"Magic touch up",
-      "Teste Elseve Colágeno Lifter":"Elseve Collagen Lifter test",
-      "Treino com creatina BigBoom":"Workout with BigBoom creatine",
-      "UGC institucional · BigBoom":"Brand UGC · BigBoom",
-      "UGC · Apresentação do Produto":"UGC · Product presentation",
-      "Unboxing Dove UV Repair & Glow + Ferúlico":"Unboxing Dove UV Repair & Glow + Ferulic",
-      "Unboxing produtos Dior":"Unboxing Dior products",
-      "Vlog com produtos do dia":"Vlog with the products of the day",
-      "Abrir menu":"Open menu","Fechar":"Close",
-      "Ver marcas anteriores":"Previous brands","Ver próximas marcas":"Next brands",
-      "Enviar e-mail para Abia":"Email Abia"
-    },
-    es:{
-      "Abia passando gloss":"Abia aplicando gloss",
-      "Abia sorrindo":"Abia sonriendo",
-      "Abia com o produto":"Abia con el producto",
-      "Apresentação de produtos":"Presentación de productos",
-      "Arrume-se comigo":"Arréglate conmigo",
-      "Gastronomia":"Gastronomía",
-      "Make gravada no ônibus":"Maquillaje grabado en el autobús",
-      "Retoque Mágico":"Retoque mágico",
-      "Teste Elseve Colágeno Lifter":"Prueba Elseve Colágeno Lifter",
-      "Treino com creatina BigBoom":"Entrenamiento con creatina BigBoom",
-      "UGC · Apresentação do Produto":"UGC · Presentación del producto",
-      "Unboxing produtos Dior":"Unboxing productos Dior",
-      "Vlog com produtos do dia":"Vlog con los productos del día",
-      "Abrir menu":"Abrir menú","Fechar":"Cerrar",
-      "Ver marcas anteriores":"Marcas anteriores","Ver próximas marcas":"Próximas marcas",
-      "Enviar e-mail para Abia":"Enviar correo a Abia"
-    }
-  };
-  var TITLES={pt:"Abia Campos · Mídia Kit 2026",en:"Abia Campos · Media Kit 2026",es:"Abia Campos · Media Kit 2026"};
-  var SKIP={SCRIPT:1,STYLE:1,NOSCRIPT:1,IFRAME:1,TEXTAREA:1};
-  var orig=new Map(), busy=false, lang='pt';
-
-  function collect(root){
-    var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
-      if(!n.nodeValue||!n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
-      if(n.parentNode&&SKIP[n.parentNode.nodeName]) return NodeFilter.FILTER_REJECT;
-      return NodeFilter.FILTER_ACCEPT;
-    }});
-    var n; while((n=w.nextNode())){ if(!orig.has(n)) orig.set(n,n.nodeValue); }
-  }
-  function apply(l){
-    busy=true; lang=l;
-    var d=DICT[l]||null;
-    collect(document.body);
-    orig.forEach(function(o,node){
-      if(!node.parentNode){ return; }
-      var k=o.trim();
-      if(!d||!d[k]){ if(node.nodeValue!==o) node.nodeValue=o; return; }
-      var lead=o.match(/^\s*/)[0], tail=o.match(/\s*$/)[0], t=lead+d[k]+tail;
-      if(node.nodeValue!==t) node.nodeValue=t;
-    });
-    document.documentElement.setAttribute('lang', l==='pt'?'pt-BR':(l==='es'?'es':'en'));
-    document.title=TITLES[l];
-    var ad=ATTR[l]||null;
-    function attrPass(sel,attr,key,dic){
-      var els=document.querySelectorAll(sel);
-      for(var i=0;i<els.length;i++){
-        var el=els[i];
-        if(!el.dataset[key]) el.dataset[key]=el.getAttribute(attr)||'';
-        var o=el.dataset[key], k=o.trim();
-        el.setAttribute(attr,(dic&&dic[k])?dic[k]:o);
-      }
-    }
-    attrPass('[placeholder]','placeholder','phOrig',d);
-    attrPass('img[alt]','alt','altOrig',ad);
-    attrPass('[aria-label]','aria-label','arOrig',ad);
-    var btns=document.querySelectorAll('.langsw button');
-    for(var j=0;j<btns.length;j++) btns[j].classList.toggle('on',btns[j].dataset.lang===l);
-    try{localStorage.setItem('jl_lang',l);}catch(e){}
-    setTimeout(function(){busy=false;},0);
-  }
-
-  function build(){
-    var host=document.querySelector('.menu-inner'); if(!host) return;
-    var wrap=document.createElement('div'); wrap.className='langsw';
-    wrap.setAttribute('role','group'); wrap.setAttribute('aria-label','Idioma / Language');
-    ['pt','en','es'].forEach(function(l){
-      var b=document.createElement('button'); b.type='button'; b.dataset.lang=l;
-      b.textContent=l.toUpperCase(); b.title={pt:'Português',en:'English',es:'Español'}[l];
-      b.addEventListener('click',function(){apply(l);});
-      wrap.appendChild(b);
-    });
-    var clock=host.querySelector('.menu-clock');
-    if(clock) host.insertBefore(wrap,clock); else host.appendChild(wrap);
-
-    var saved=null; try{saved=localStorage.getItem('jl_lang');}catch(e){}
-    if(!saved){
-      var nav=(navigator.language||'pt').toLowerCase();
-      saved = nav.indexOf('es')===0 ? 'es' : (nav.indexOf('pt')===0 ? 'pt' : 'en');
-    }
-    apply(saved);
-
-    var mo=new MutationObserver(function(){ if(busy||lang==='pt') return; apply(lang); });
-    mo.observe(document.body,{childList:true,subtree:true,characterData:true});
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',build);
-  else build();
-})();
-</script>
-
-<script>
-/* carrossel de logos: comeca parado no inicio, a pessoa roda manualmente (setas, arraste ou teclado) */
-(function(){
-  var box=document.getElementById('logoMarquee'), track=document.getElementById('logoTrack');
-  if(!box||!track) return;
-
-  /* clona a fita uma vez para o loop nao ter emenda nos dois sentidos */
-  var originals=Array.prototype.slice.call(track.children);
-  originals.forEach(function(n){ var c=n.cloneNode(true); c.setAttribute('aria-hidden','true'); track.appendChild(c); });
-
-  var half=0, stepPx=0;
-  function measure(){
-    half=track.scrollWidth/2;
-    var first=track.children[0];
-    stepPx=first?(first.getBoundingClientRect().width+24):130;
-  }
-  measure();
-  window.addEventListener('resize',measure);
-  if(window.ResizeObserver){ new ResizeObserver(measure).observe(track); }
-  box.scrollLeft=0;
-
-  /* mantem o scroll dentro da primeira metade, criando o loop infinito nos dois lados */
-  var fixing=false, tm=null;
-  function suspend(){ fixing=true; clearTimeout(tm); tm=setTimeout(function(){ fixing=false; },800); }
-  box.addEventListener('scroll',function(){
-    if(half<=0||fixing) return;
-    if(box.scrollLeft>=half){ fixing=true; box.scrollLeft-=half; fixing=false; }
-    else if(box.scrollLeft<0){ fixing=true; box.scrollLeft+=half; fixing=false; }
-  },{passive:true});
-
-  /* avanca/volta um card por clique, atravessando a emenda sem salto visivel */
-  function nudge(dir){
-    if(half<=0) return;
-    var target=box.scrollLeft+dir*stepPx;
-    if(target<0){ suspend(); box.scrollLeft+=half; target+=half; }
-    else if(target>half){ suspend(); box.scrollLeft-=half; target-=half; }
-    box.scrollTo({left:target,behavior:'smooth'});
-  }
-  var prev=document.getElementById('logoPrev'), next=document.getElementById('logoNext');
-  if(prev) prev.addEventListener('click',function(){ nudge(-1); });
-  if(next) next.addEventListener('click',function(){ nudge(1); });
-
-  /* arrastar com o mouse no desktop (no celular o toque ja rola nativamente) */
-  box.addEventListener('dragstart',function(e){ e.preventDefault(); });
-  var down=false, startX=0, startLeft=0, moved=false;
-  box.addEventListener('pointerdown',function(e){
-    if(e.pointerType!=='mouse') return;
-    down=true; moved=false; startX=e.clientX; startLeft=box.scrollLeft;
-    box.classList.add('grabbing');
-  });
-  window.addEventListener('pointermove',function(e){
-    if(!down) return;
-    var dx=e.clientX-startX;
-    if(Math.abs(dx)>3) moved=true;
-    box.scrollLeft=startLeft-dx;
-    if(moved) e.preventDefault();
-  },{passive:false});
-  window.addEventListener('pointerup',function(){
-    if(!down) return;
-    down=false; box.classList.remove('grabbing');
-  });
-
-  box.addEventListener('keydown',function(e){
-    if(e.key==='ArrowRight'){ e.preventDefault(); nudge(1); }
-    else if(e.key==='ArrowLeft'){ e.preventDefault(); nudge(-1); }
-  });
-})();
-</script>
-<script async src="https://www.instagram.com/embed.js"></script>
-<script async src="https://www.tiktok.com/embed.js"></script>
-
+  <script async src="https://www.instagram.com/embed.js"></script>
 </body>
+
 </html>
