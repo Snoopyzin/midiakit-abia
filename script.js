@@ -89,7 +89,7 @@
       en: {
         "Sobre": "About", "Métricas": "Metrics", "Nichos": "Niches", "Portfólio": "Portfolio",
         "Processo": "Process", "Marcas": "Brands", "Contato": "Contact",
-        "Mídia Kit — Agosto 2026": "Media Kit — August 2026",
+        "Mídia Kit 2026": "Media Kit 2026",
         "Criadora de Conteúdo · Moda & Beleza": "Content Creator · Fashion & Beauty",
         "público feminino": "female audience", "25-34 anos": "25-34 years old", "público no Brasil": "audience in Brazil",
         "Sua marca recomendada por uma voz que a audiência realmente ouve e responde.": "Your brand recommended by a voice the audience truly listens to and responds to.",
@@ -154,7 +154,7 @@
       },
       es: {
         "Portfólio": "Portafolio", "Processo": "Proceso", "Contato": "Contacto",
-        "Mídia Kit — Agosto 2026": "Media Kit — Agosto 2026",
+        "Mídia Kit 2026": "Media Kit 2026",
         "Criadora de Conteúdo · Moda & Beleza": "Creadora de Contenido · Moda y Belleza",
         "público feminino": "público femenino", "25-34 anos": "25-34 años", "público no Brasil": "público en Brasil",
         "Sua marca recomendada por uma voz que a audiência realmente ouve e responde.": "Tu marca recomendada por una voz que la audiencia realmente escucha y responde.",
@@ -219,8 +219,8 @@
       }
     };
     var ATTR = {
-      en: { "Abrir menu": "Open menu", "Enviar e-mail para Abia": "Email Abia", "Ver marcas anteriores": "Previous brands", "Ver próximas marcas": "Next brands" },
-      es: { "Abrir menu": "Abrir menú", "Enviar e-mail para Abia": "Enviar correo a Abia", "Ver marcas anteriores": "Marcas anteriores", "Ver próximas marcas": "Próximas marcas" }
+      en: { "Abrir menu": "Open menu", "Enviar e-mail para Abia": "Email Abia", "Ligar ou chamar no WhatsApp": "Call or message on WhatsApp", "Ver marcas anteriores": "Previous brands", "Ver próximas marcas": "Next brands" },
+      es: { "Abrir menu": "Abrir menú", "Enviar e-mail para Abia": "Enviar correo a Abia", "Ligar ou chamar no WhatsApp": "Llamar o escribir por WhatsApp", "Ver marcas anteriores": "Marcas anteriores", "Ver próximas marcas": "Próximas marcas" }
     };
     var TITLES = { pt: "Abia Campos · Mídia Kit 2026", en: "Abia Campos · Media Kit 2026", es: "Abia Campos · Media Kit 2026" };
     var SKIP = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, IFRAME: 1, TEXTAREA: 1 };

@@ -761,6 +761,71 @@
       aspect-ratio: 4/5;
     }
 
+    /* ===== diptico de catalogo (07 Modelo Comercial) ===== */
+    .catalog-duo {
+      display: grid;
+      grid-template-columns: 58fr 80fr;
+      border-top: 1px solid var(--line);
+    }
+
+    .catalog-duo figure {
+      margin: 0;
+      overflow: hidden;
+      border-right: 1px solid var(--line);
+    }
+
+    .catalog-duo figure:last-child {
+      border-right: 0;
+    }
+
+    .catalog-duo img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      transition: transform .8s cubic-bezier(.2, .7, .2, 1);
+    }
+
+    .catalog-duo figure:first-child img {
+      aspect-ratio: 58/100;
+      object-position: 56% center;
+    }
+
+    .catalog-duo figure:last-child img {
+      aspect-ratio: 4/5;
+      object-position: 50% 38%;
+    }
+
+    .catalog-duo figure:hover img {
+      transform: scale(1.045);
+    }
+
+    .cat-cap {
+      font-family: 'Inter', sans-serif;
+      font-size: .66rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      padding: .85rem 1.2rem;
+      border-top: 1px solid var(--line);
+    }
+
+    @media(max-width:640px) {
+      .catalog-duo {
+        grid-template-columns: 1fr;
+      }
+
+      .catalog-duo figure {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .catalog-duo figure:last-child {
+        border-bottom: 0;
+      }
+    }
+
     .reels-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1015,6 +1080,7 @@
 
     .steps.steps-col .step {
       padding: 1.15rem 0;
+      border: 0;
       border-bottom: 1px solid var(--line);
       border-radius: 0;
       box-shadow: none;
@@ -1401,6 +1467,23 @@
       border-color: var(--pink);
     }
 
+    .contact-phone {
+      display: block;
+      width: fit-content;
+      font-family: 'Inter', sans-serif;
+      font-size: .95rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      color: var(--ink);
+      margin-top: .55rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s;
+    }
+
+    .contact-phone:hover {
+      border-color: var(--ink);
+    }
+
     .contact-reply {
       font-size: .76rem;
       color: var(--ink-soft);
@@ -1511,6 +1594,11 @@
     }
 
     @media(max-width:540px) {
+      /* coluna estreita: recentra o recorte pro cabelo nao encostar na borda */
+      .hero-frame .hf-main img {
+        object-position: 46% center;
+      }
+
       .board {
         padding: 2.2rem 1.1rem 3.5rem;
       }
